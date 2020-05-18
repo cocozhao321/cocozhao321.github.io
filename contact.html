@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coco Zhao Personal Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <script src="/script.js" defer></script>
+  </head>
+  <body id="back">
+<!-- Menu bar -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>I am Coco Zhao</h1>
+        <p>Contact</p>
+      </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="essay.html">Essay</a>
+      <div class="dropdown">
+        <button class="dropbtn">CS
+          <i class="fa fa-caret-down"></i>
+          </button>
+        <div class="dropdown-content">
+        <a href="alice.html">Alice 3</a>
+          <a href="#">Games</a>
+          <a href="#">Other Programs</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+<!-- Contact Form -->
+    <h>Contact me</h>
+    <div class="containers">
+      <form method="post" action="contact.php">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+              <label for="lname">Email address</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Your email address..">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-25">
+            <label for="subject">Comments</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+      </div>
+      <div class="row">
+          <input type="submit" value="Submit">
+      </div>
+  </form>
+</div>
+
+  </body>
+</html>
