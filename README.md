@@ -1,18 +1,20 @@
 # My cool website
 
-This file describes your project to the community. What's your cool website about? What makes it special?
+This is my personal website! I will update randomly.
 
 ヽ(๏∀๏ )ﾉ
 
-## ← index.html
 
-Where you'll write the content of your website. 
+## ← Credit
 
-## ← styles.css
+Demo Images:
+		Unsplash (unsplash.com)
 
-CSS files add styling rules to your content
+Icons:
+		Font Awesome (fontawesome.io)
 
-## ← script.js
-
-If you're feeling fancy you can add interactivity to your site with Javascript
+Other:
+		jQuery (jquery.com)
+		Scrollex (github.com/ajlkn/jquery.scrollex)
+		Responsive Tools (github.com/ajlkn/responsive-tools)
 
