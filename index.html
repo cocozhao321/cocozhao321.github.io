@@ -1,271 +1,710 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ke (Coco) Zhao</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coco (Ke) Zhao — Software Engineer & AI Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    :root {
+      --hero-bg:    #211c18;
+      --hero-mid:   #2e2520;
+      --terra:      #b8673a;
+      --terra-light:#c97a4f;
+      --terra-dark: #945030;
+      --sienna:     #8b4513;
+      --body:       #fdf8f4;
+      --cream:      #f5ede3;
+      --cream2:     #ede4d8;
+      --white:      #ffffff;
+      --text:       #1e1814;
+      --text-mid:   #5a4e46;
+      --text-light: #8c7d74;
+      --border:     #e4d9ce;
+      --radius:     12px;
+    }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/research.png" alt="" class="avatar"/></span>
-						<h1>Ke Zhao</h1>
-						<p>UPenn Senior double majoring in Cognitive Science and Computer Science<br />
-					</header>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--body); line-height: 1.6; overflow-x: hidden; }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About Me</a></li>
-							<li><a href="#education">Education</a></li>
-							<li><a href="#research">Research</a></li>
-							<li><a href="#project">CS Project</a></li>
-							<li><a href="resume.html">CV</a></li>
-						</ul>
-					</nav>
+    /* ── SCROLL ANIMATIONS ── */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
 
-				<!-- Main -->
-					<div id="main">
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      background: rgba(33, 28, 24, 0.94);
+      backdrop-filter: blur(16px);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 3rem; height: 58px;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.05rem; color: #f5ede3; letter-spacing: 0.01em; }
+    .nav-logo span { color: var(--terra-light); font-style: italic; }
+    .nav-links { display: flex; gap: 2.25rem; list-style: none; }
+    .nav-links a { color: #a09288; text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: #f5ede3; }
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>ABOUT ME</h2>
-										</header>
-										<p>
-											 Hey, I am Ke Zhao (often go by Coco), and I am a senior at the University of Pennsylvania double majoring Cognitive Science and Computer Science. I grew up in Wenzhou, a port city in the East coast China, and moved to Philadelphia when I was 16. In my spare time, I love travelling, solving Rubick's cube, doing Sudukos and playing the piano. 
-										</p>
-										 <p>
-          									At Penn, I do research for Dr. Rao in studying how people make
-         								    decisions and work as a research assistant for Dr. Sheline in the
-          									<a href="https://www.med.upenn.edu/cnds/" class="link" target="_blank">CNDS</a> for a real-time neurofeedback project.
-        								</p>
-									</div>
-									<span class="image"><img src="images/self.jpeg" alt="" /></span>
-								</div>
-							</section>
-						<!-- Education Section -->
-							<section id="education" class="main special">
-								<header class="major">
-									<h2>EDUCATION</h2>
-								</header>
-								<ul class="features">
-								<li>
-										<span class="icon solid major style1 fa-school"></span>
-								</li>
-								<li>
-										<h3>University of Pennsylvania - College of Arts and Sciences</h3>
-										<p>Candidate for B.A May 2022<br>
-										<strong>Cognitive Science</strong><br>
-										<strong>Computer Science</strong></p>
-								</li>
-							</ul>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-book"></span>
-									</li>
-									<li>
-										<h3>Relevent Courses</h3>
-										<div align="left">
-											CIS521: Artificial Intelligence<br>
-											CIS419: Applied Machine Learning<br>
-											CIS545: Big Data Analytics<br>
-											CIS550: Database and Information Systems<br>
-											CIS350: Software Design/Engineering<br>
-											CIS320: Introduction to Algorithms<br>
-											CIS121: Data Structures and Algorithms<br>
-											CIS195: Android App Development<br>
-											PSYC273: NeuroEconomics<br>
-											OIDD290: Decision Processes<br>
-											PSYC111: Perception<br>
-											BIBB109: Intro to Brain and Behavior
-										</div>
-									</li>
-								</ul>
-							</section>
-					<!-- Research section -->
-					<section id="research" class="main special">
-						<div class="inner">
-							<header class="major">
-								<h2>RESEARCH</h2>
-								<div align = "left">
-								<p>
-									How people make risky decisions? How people behave differently after sleep loss? How to treate people with mental illness with advanced technology ? How to use machine learning and brain imaging technology to better study human minds? I hope to answer these quesitons one day.
-								</p>
-								<p>
-									I have been worked in brain imaging research lab since 2016. Currently, I am conducting independent research projects with Dr. Hengyi Rao in <a href="https://www.cfn.upenn.edu/" class="link" target="_blank">Center for Functional Neuroimaging</a> at UPenn on topics related to individual risky decision making. I am also conducting a real time fMRI feedback project under guidance of Dr. Sheline in the <a href="https://www.med.upenn.edu/cnds/" class="link" target="_blank">CNDS</a> at Penn Medicine and  Dr. Norman in <a href="https://compmem.princeton.edu/" class="link" target="_blank">Computational Memory Lab</a> at Princeton. </p>
-									<p>Below are some projects that I am currently working on or did in the past</p>
-								</div>
-							</header>
-							<h2>On-going Projects</h2>
-							<ul class="features2">
-								<li class="icon fa-flag">
-									<h3>Real time fMRI Project</h3>
-									Investigate the effect of real time fMRI feedback in reducing depression and the relationship among symptoms, brain measures and actigraphy in defining biotypes across depressed and anxious individuals. <br>
-									<code>fMRI</code><br>
-									 <code>Machine learning</code><br>
-									  <code>web cloud</code>
-								</li>
-								<li class="icon fa-flag">
-									<h3>CogBrain Web Platform Project</h3>
-									With the widespread of COVID-19, lots of research groups are unable to conduct in-person experiment. This website was developed to be a reliable, accessible, flexible, and secure online tool for researchers to easily collect behavioral data. <a href="http://www.cogbraintest.com/"class="link" target="_blank">Go to the website</a>.<br>
-									<code>behavoral tasks</code><br>
-									<code>web development</code>
-								</li>
-							</ul>
-							<h2>Past Projects</h2>
-							<ul class="features2">
-								<li class="icon fa-paper-plane">
-									<h3>Age and Gender Effects on Risk-taking Behavior</h3>
-									This study investigates the effects of age and gender on risky decision-making across the life span by using cognitive behavioral task and cognitive modeling on a large dataset.<br>
-									<code>behavoral task</code><br>
-									<code>web development</code><br>
-									<code>cognitive modeling</code>
-								</li>
-								<li class="icon fa-paper-plane">
-									<h3>Decision-making and Sensation Seeking</h3>
-									This study uses ERP with the balloon analogue risk task to investigate how individual differences in sensation seeking modulate brian responses to risk-taking with different potential reward/loss magnitude.<br>
-									<code>EEG</code><br>
-									<code>behavoral Task</code>
-								</li>
-								<li class="icon fa-paper-plane">
-									<h3>Sleep Habits and Emotional Experiences Project (SHEEP)</h3>
-									<p>This project examines the interplay between reward processing, actigraph-assessed sleep parameters, and well-being in college students.</p>
-									<code>sleep</code><br>
-									<code>daily checking</code>
-								</li>
-								<li class="icon fa-paper-plane">
-									<h3>Altered Spontaneous Brain Activity in OCD</h3>
-									This study used fMRI to examine whether Obsessive-compulsive personality disorder (OCPD) patients will exhibit altered spontaneous brain activity as compared to healthy controls.<br>
-									<code>fMRI</code><br>
-									<code>OCPD</code>
-								</li>
-								<li class="icon fa-paper-plane">
-									<h3>Perfusion imaging of fatigue and time-on-task effects from sustained mental workload in patients with Parkinson’s disease</h3>
-									In this study, we combined Arterial spin labeled(ASL) perfusion functional MRI with a sustained mental workload paradigm to examine the neural correlates of fatique and time-on-task effects in PD.<br>
-									<code>fMRI</code><br>
-									<code>ASL</code><br>
-									<code>Parkinson's disease</code>
-								</li>
-							
-							<li class="icon fa-paper-plane">
-									<h3>Test-retest reliability of CBF for accessing brain function at rest and during a vigilance task</h3>
-									This study investigated the comparative reliability of Arterial spin labeled(ASL) measures by doing scanning in a strictly controlled in-laboratory while at rest and during performing a simple and reliable psychomotor vigilance test.<br>
-									<code>fMRI</code><br>
-									<code>ASL</code><br>
-								</li>
-							</ul>
-						</div>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="research.html" class="button primary">Learn more</a></li>
-									</ul>
-								</footer>
-					</section>
-					<!-- CS Project Section -->
-								<section id="project" class="main special">
-									<header class="major">
-										<h2>Software Development</h2>
-										<p>Below are a list of projects I did in the past few years. <br>Some projects below are the coding part of the above research projects.</p>
-									</header>
-									<div class="features3">
-										<article>
-											<span class="icon solid fa-gamepad"></span>
-											<div class="content" align = "left">
-												<h3><strong>CogBrain</strong></h3>
-												<li>A web platform that tests individual's cognitive ability via a series of cognitive tasks. Researcheres could use it to make custom online studies and collect data easily.</li>
-												<li>This website has attracted more than 3k players to play the tasks.</li>
-												<a href="http://www.cogbraintest.com/" class="link" target="_blank">>Website link</a><br><br>
-												<code>front-end</code><code>AWS</code><code>MySQL</code>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-chart-line"></span>
-											<div class="content" align="left">
-												<h3><strong>BrainIAK Project</strong></h3>
-												BrainIAK applies advanced machine learning methods and high-performance computing to analyzing neuroimaging data. It includes fMRI modules for FCMA, MVPA, and more.<br>
-												<a href="https://brainiak.org/" class="link" target="_blank">>Website link</a>
-												<br><br>
-												<code>Python</code><code>front-end</code>
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; align-items: center; justify-content: center;
+      padding: 80px 3rem 5rem;
+      position: relative; overflow: hidden;
+      background: var(--hero-bg);
+    }
+    #hero::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(ellipse 70% 60% at 60% 35%, rgba(184,103,58,0.1) 0%, transparent 55%),
+        radial-gradient(ellipse 40% 40% at 15% 75%, rgba(148,80,48,0.07) 0%, transparent 50%);
+    }
 
-											</div>
-										</article>
-									
-										<article>
-											<span class="icon solid fa-mug-hot"></span>
-											<div class="content" align = "left">
-												<h3><strong>Stay Home and Eat Well</strong></h3>
-												<li>A web application allows users to search for recipes satisfying certain criteria corresponding to ingredients, nutritional value, preparation time, ratings and reviews, and other user inputted information.</li>
-												
-												<a href="https://github.com/cocozhao321/CIS450_project" class="link" target="_blank">>Github link</a><br><br>
-												<code>REACT JS</code><code>MySQL</code><code>AWS</code>
-												<br>
-												<br>
-												<br>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-map"></span>
-											<div class="content"align="left">
-												<br>
-												<h3><strong>ForeverBrain</strong></h3>
-												<li>A recruiting and job matching platform that help companies build the workforce 
-												in the future using brain science and audited AI technology.</li>
-												<li>The platform used a series of objective behavioral games that allow companies don't judge a job seeker by their resume alone. </li>
-												
-												<code>frone-end</code><code>machine learning</code><code>MySQL</code>
-											</div>
-										</article>
-									</div>
-								</section>
-							</div>
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Ke Zhao</h2>
-							<p>A senior at University of Pennsylvania double majoring in Cognitive Science and Computer Science</p>
-							<ul class="actions">
-								<li><a href="index.html#intro" class="button">Learn More</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Contact</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>3900 Walnut Street, Philadelphia, PA, 19104</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:cocoz@sas.upenn.edu">cocoz@sas.upenn.edu</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/ke-zhao-8555b3126/" class="icon brands fa-linkedin alt" target="_blank"><span class="label">LinkedIn</span></a></li>
-							</ul>
-						</section>
-					</footer>
+    .hero-inner { max-width: 980px; width: 100%; display: flex; align-items: center; gap: 5rem; position: relative; z-index: 1; }
 
-			</div>
+    /* photo */
+    .hero-photo-wrap { flex-shrink: 0; position: relative; }
+    .hero-photo {
+      width: 250px; height: 330px; border-radius: 16px;
+      object-fit: cover; object-position: center 8%;
+      display: block;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(184,103,58,0.25);
+    }
+    .hero-photo-wrap::after {
+      content: ''; position: absolute; inset: -1px; border-radius: 17px; pointer-events: none;
+      background: linear-gradient(160deg, rgba(184,103,58,0.35) 0%, transparent 40%, transparent 60%, rgba(148,80,48,0.2) 100%);
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    /* text */
+    .hero-text { flex: 1; }
+    .hero-eyebrow {
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--terra-light); margin-bottom: 1.1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--terra-light); display: inline-block; }
+    .hero-name {
+      font-family: 'Lora', serif;
+      font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 600; line-height: 1.1;
+      color: #f5ede3; letter-spacing: -0.01em; margin-bottom: 0.75rem;
+    }
+    .hero-title { font-size: 0.95rem; color: #a09288; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+    .hero-title strong { color: #d4a882; font-weight: 600; }
+    .hero-title .sep { color: #4a3f38; }
+    .hero-desc { font-size: 0.91rem; color: #c4b5a8; max-width: 460px; margin-bottom: 2.25rem; line-height: 1.85; }
 
-	</body>
+    .hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.75rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.65rem 1.4rem; border-radius: 8px;
+      font-size: 0.8rem; font-weight: 600; text-decoration: none;
+      transition: all 0.2s; letter-spacing: 0.02em;
+    }
+    .btn-primary { background: var(--terra); color: #fff; box-shadow: 0 4px 16px rgba(184,103,58,0.35); }
+    .btn-primary:hover { background: var(--terra-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184,103,58,0.4); }
+    .btn-outline { background: rgba(255,255,255,0.04); color: #a09288; border: 1px solid rgba(255,255,255,0.1); }
+    .btn-outline:hover { border-color: rgba(184,103,58,0.5); color: #f5ede3; background: rgba(184,103,58,0.08); }
+
+    .stat-row { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 2rem; }
+    .stat { flex: 1; padding: 0 1.25rem; border-right: 1px solid rgba(255,255,255,0.07); text-align: center; }
+    .stat:first-child { padding-left: 0; text-align: left; }
+    .stat:last-child { border-right: none; }
+    .stat-num { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 600; color: #f5ede3; line-height: 1; margin-bottom: 0.3rem; }
+    .stat-label { font-size: 0.65rem; color: #6b5e56; text-transform: uppercase; letter-spacing: 0.07em; }
+
+    /* ── SHARED SECTION STYLES ── */
+    section { padding: 5.5rem 3rem; }
+    .container { max-width: 940px; margin: 0 auto; }
+    .section-eyebrow {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--terra); margin-bottom: 0.6rem;
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .section-eyebrow::before { content: ''; width: 16px; height: 1px; background: var(--terra); display: inline-block; }
+    .section-title { font-family: 'Lora', serif; font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 600; color: var(--text); letter-spacing: -0.01em; margin-bottom: 0.85rem; }
+    .section-sub { font-size: 0.91rem; color: var(--text-mid); max-width: 560px; line-height: 1.8; margin-bottom: 3rem; }
+    hr.divider { border: none; border-top: 1px solid var(--border); margin-bottom: 3rem; }
+
+    /* ── ABOUT ── */
+    #about { background: var(--white); }
+    .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: start; }
+    .about-text p { color: var(--text-mid); line-height: 1.9; margin-bottom: 1.1rem; font-size: 0.92rem; }
+    .about-text strong { color: var(--text); font-weight: 600; }
+    .hobbies-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.75rem; margin-top: 1.75rem; }
+    .tag-list { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .tag { font-size: 0.8rem; padding: 5px 13px; border-radius: 100px; border: 1px solid var(--border); color: var(--text-mid); background: var(--body); }
+
+    .pillars { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .pillar {
+      padding: 1.2rem 1.4rem; border-bottom: 1px solid var(--border);
+      display: flex; align-items: flex-start; gap: 1rem;
+      transition: background 0.2s;
+    }
+    .pillar:last-child { border-bottom: none; }
+    .pillar:hover { background: var(--body); }
+    .pillar-icon {
+      flex-shrink: 0; width: 34px; height: 34px; border-radius: 8px;
+      background: linear-gradient(135deg, var(--terra), var(--sienna));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 0.8rem; margin-top: 1px;
+    }
+    .pillar h4 { font-size: 0.86rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+    .pillar p { font-size: 0.78rem; color: var(--text-mid); line-height: 1.6; }
+
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--body); }
+    .exp-list { display: flex; flex-direction: column; gap: 1.25rem; }
+    .exp-card {
+      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
+      padding: 2rem 2.25rem; position: relative; overflow: hidden;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .exp-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); transform: translateY(-2px); }
+    .exp-card.current::after {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, var(--terra), var(--sienna));
+    }
+    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.3rem; flex-wrap: wrap; gap: 0.5rem; }
+    .exp-company { font-size: 1rem; font-weight: 700; color: var(--text); }
+    .badge { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; }
+    .badge-current { background: rgba(184,103,58,0.1); color: var(--terra-dark); border: 1px solid rgba(184,103,58,0.2); }
+    .badge-acquired { background: rgba(139,69,19,0.08); color: var(--sienna); border: 1px solid rgba(139,69,19,0.15); }
+    .exp-role { font-size: 0.86rem; font-weight: 600; color: var(--terra); margin-bottom: 0.6rem; }
+    .exp-meta { font-size: 0.76rem; color: var(--text-light); margin-bottom: 1.35rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .exp-meta i { margin-right: 5px; opacity: 0.55; }
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .exp-bullets li { font-size: 0.85rem; color: var(--text-mid); padding-left: 1.2rem; position: relative; line-height: 1.7; }
+    .exp-bullets li::before { content: '–'; position: absolute; left: 0; color: var(--terra); font-weight: 600; }
+    .exp-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1.35rem; padding-top: 1.35rem; border-top: 1px solid var(--border); }
+    .exp-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.67rem; background: var(--body); color: var(--text-mid); padding: 3px 9px; border-radius: 4px; border: 1px solid var(--border); }
+
+    /* ── EDUCATION ── */
+    #education { background: var(--white); }
+    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .edu-card {
+      border-radius: var(--radius); border: 1px solid var(--border);
+      padding: 1.75rem 2rem; position: relative; overflow: hidden;
+      background: var(--body);
+      transition: box-shadow 0.2s;
+    }
+    .edu-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
+    .edu-card.current { background: linear-gradient(140deg, rgba(184,103,58,0.04) 0%, var(--body) 60%); border-color: rgba(184,103,58,0.25); }
+    .edu-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, var(--terra), var(--sienna)); }
+    .edu-badge { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 1rem; }
+    .edu-badge.in-progress { background: rgba(184,103,58,0.1); color: var(--terra-dark); border: 1px solid rgba(184,103,58,0.2); }
+    .edu-badge.completed { background: var(--cream2); color: var(--text-light); border: 1px solid var(--border); }
+    .edu-school { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
+    .edu-degree { font-size: 0.86rem; font-weight: 600; color: var(--terra); margin-bottom: 0.25rem; }
+    .edu-period { font-size: 0.76rem; color: var(--text-light); margin-bottom: 0.9rem; }
+    .edu-detail { font-size: 0.81rem; color: var(--text-mid); line-height: 1.75; }
+    .edu-award { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.9rem; font-size: 0.77rem; font-weight: 600; color: var(--terra-dark); }
+
+    /* ── SKILLS ── */
+    #skills { background: var(--body); }
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
+    .skill-card {
+      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
+      padding: 1.5rem 1.6rem; transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .skill-card:hover { border-color: rgba(184,103,58,0.3); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
+    .skill-card h4 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .skill-items { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .skill-pill { font-size: 0.75rem; background: var(--body); color: var(--text-mid); padding: 4px 11px; border-radius: 100px; border: 1px solid var(--border); font-weight: 500; }
+
+    /* ── PROJECTS ── */
+    #projects { background: var(--white); }
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(390px, 1fr)); gap: 1.5rem; }
+    .project-card {
+      background: var(--body); border-radius: var(--radius); border: 1px solid var(--border);
+      padding: 1.75rem; display: flex; flex-direction: column;
+      transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+    }
+    .project-card:hover { box-shadow: 0 10px 32px rgba(0,0,0,0.08); transform: translateY(-3px); border-color: rgba(184,103,58,0.25); }
+    .project-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: linear-gradient(135deg, var(--terra), var(--sienna));
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 0.95rem; margin-bottom: 1.1rem;
+      box-shadow: 0 4px 12px rgba(184,103,58,0.3);
+    }
+    .project-card h3 { font-size: 0.93rem; font-weight: 700; color: var(--text); margin-bottom: 0.6rem; }
+    .project-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.78; flex: 1; margin-bottom: 1.25rem; }
+    .project-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .project-link { font-size: 0.77rem; font-weight: 600; color: var(--terra); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: gap 0.2s, color 0.2s; }
+    .project-link:hover { color: var(--sienna); gap: 0.65rem; }
+
+    /* ── RESEARCH ── */
+    #research { background: var(--body); }
+    .research-intro { font-size: 0.91rem; color: var(--text-mid); max-width: 640px; margin-bottom: 2.5rem; line-height: 1.88; }
+    .papers { display: flex; flex-direction: column; gap: 1rem; }
+    .paper-card {
+      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
+      padding: 1.25rem 1.6rem; border-left: 3px solid var(--terra);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .paper-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); transform: translateX(4px); }
+    .journal-name { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.5rem; display: block; }
+    .paper-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.7; }
+    .paper-card a { color: var(--terra); text-decoration: none; }
+    .paper-card a:hover { text-decoration: underline; }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--hero-bg); text-align: center;
+      position: relative; overflow: hidden;
+    }
+    #contact::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background: radial-gradient(ellipse 55% 50% at 50% 50%, rgba(184,103,58,0.08) 0%, transparent 70%);
+    }
+    #contact .container { position: relative; z-index: 1; }
+    #contact .section-eyebrow { color: var(--terra-light); justify-content: center; }
+    #contact .section-eyebrow::before { display: none; }
+    #contact .section-title { color: #f0e6dc; }
+    .contact-desc { font-size: 0.9rem; color: #8c7d74; max-width: 400px; margin: 0 auto 2.75rem; line-height: 1.8; }
+    .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .contact-link {
+      display: flex; align-items: center; gap: 0.65rem;
+      padding: 0.85rem 1.6rem; border-radius: 10px;
+      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
+      color: #c4b5a8; text-decoration: none; font-size: 0.83rem; font-weight: 500;
+      transition: all 0.22s; backdrop-filter: blur(8px);
+    }
+    .contact-link i { color: var(--terra-light); }
+    .contact-link:hover { background: rgba(184,103,58,0.12); border-color: rgba(184,103,58,0.35); color: #f0e6dc; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+    footer { background: #170f0a; text-align: center; padding: 1.75rem; font-size: 0.76rem; color: #4a3f38; border-top: 1px solid rgba(255,255,255,0.03); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 1.5rem; }
+      .nav-links { display: none; }
+      section { padding: 4rem 1.5rem; }
+      .hero-inner { flex-direction: column; gap: 2.5rem; }
+      .hero-photo { width: 160px; height: 212px; }
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .edu-grid { grid-template-columns: 1fr; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .stat-row { flex-wrap: wrap; }
+      .stat { min-width: 40%; text-align: left; padding: 0.5rem 0; border-right: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Coco <span>Zhao</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <img class="hero-photo" src="images/cocoz_2026.png" alt="Coco Zhao">
+    </div>
+    <div class="hero-text">
+      <div class="hero-eyebrow">Software Engineer &amp; AI Builder</div>
+      <h1 class="hero-name">Ke (Coco) Zhao</h1>
+      <p class="hero-title">
+        SDE II <span class="sep">·</span> <strong>Amazon</strong> <span class="sep">·</span> Seattle, WA
+      </p>
+      <p class="hero-desc">
+        Full-stack engineer with 7+ years building production AI systems and scalable platforms.
+        I architect multi-agent AI infrastructure, design real-time data pipelines, and bridge
+        research with engineering — from brain imaging labs to enterprise AI at Amazon.
+      </p>
+      <div class="hero-links">
+        <a class="btn btn-primary" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        <a class="btn btn-outline" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a class="btn btn-outline" href="https://github.com/cocozhao321" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a class="btn btn-outline" href="mailto:cocozhao321@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat">
+          <div class="stat-num">7+</div>
+          <div class="stat-label">Years Building</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">40M+</div>
+          <div class="stat-label">Docs / Day</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-label">Papers</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">207</div>
+          <div class="stat-label">Citations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="section-eyebrow reveal">About</div>
+    <h2 class="section-title reveal">Engineer × Researcher × Builder</h2>
+    <hr class="divider reveal">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hey, I'm Coco — a software engineer who straddles the line between production engineering and applied research. I grew up in Wenzhou, China, moved to Philadelphia at 16, and graduated from UPenn with a double major in Computer Science and Cognitive Science, Magna Cum Laude.</p>
+        <p>At Amazon, I build enterprise AI infrastructure that handles massive scale — multi-agent systems powered by LLMs, real-time data pipelines, and AI safety systems protecting data integrity for thousands of downstream users.</p>
+        <p>Before Amazon, I co-founded a behavioral-assessment tech startup (acquired in 2022), and spent four years running neuroimaging research at UPenn, Princeton, and UPenn Medicine — publishing 8 papers along the way.</p>
+        <div class="hobbies-label">Outside of work</div>
+        <div class="tag-list">
+          <span class="tag">🎹 Piano</span>
+          <span class="tag">🧩 Rubik's Cube</span>
+          <span class="tag">✈️ Travelling</span>
+          <span class="tag">🔢 Sudoku</span>
+        </div>
+      </div>
+      <div class="pillars reveal reveal-delay-1">
+        <div class="pillar">
+          <div class="pillar-icon"><i class="fas fa-brain"></i></div>
+          <div>
+            <h4>AI Systems at Scale</h4>
+            <p>Multi-agent AI with LLMs, RAG/GraphRAG, MCP — processing 40M+ documents daily at 99.99% uptime.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><i class="fas fa-layer-group"></i></div>
+          <div>
+            <h4>Full-Stack Engineer</h4>
+            <p>React to Lambda to OpenSearch — end-to-end ownership across the full stack at enterprise scale.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><i class="fas fa-flask"></i></div>
+          <div>
+            <h4>Researcher Turned Engineer</h4>
+            <p>8 peer-reviewed papers, 207 citations in computational neuroscience. I translate science into production systems.</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h4>Startup Co-Founder</h4>
+            <p>Built ForeverBrainTech from 0 to 100k+ users and 10+ engineers before acquisition in 2022.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="container">
+    <div class="section-eyebrow reveal">Career</div>
+    <h2 class="section-title reveal">Work Experience</h2>
+    <hr class="divider reveal">
+    <div class="exp-list">
+
+      <div class="exp-card current reveal">
+        <div class="exp-top">
+          <div>
+            <div class="exp-company">Amazon.com Services LLC</div>
+            <div class="exp-role">Software Development Engineer II</div>
+          </div>
+          <span class="badge badge-current">Current</span>
+        </div>
+        <div class="exp-meta">
+          <span><i class="fas fa-map-marker-alt"></i>Seattle, WA</span>
+          <span><i class="fas fa-calendar-alt"></i>July 2022 – Present</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Architected full-stack enterprise data platform (React, Lambda/EC2, OpenSearch) processing 40M+ documents daily from 20+ sources with 99.99% uptime; serves 10k+ users with &lt;1s p95 latency across 600k+ daily requests.</li>
+          <li>Designed <strong>multi-agent AI system</strong> using Claude (Bedrock) with MCP for agent coordination and RAG/GraphRAG for knowledge retrieval; built an incident-analysis agent that cut investigation time from 3 hours to 3 minutes — a 99% efficiency gain.</li>
+          <li>Built real-time data ingestion pipeline (SNS/SQS/Kinesis) achieving &lt;5 min latency; developed REST APIs with OAuth, rate limiting, and access controls — exposing data to 100+ downstream teams.</li>
+          <li>Implemented AI safety guardrails: prompt injection defense, PII detection/scrubbing (&gt;99.9% accuracy), hallucination monitoring, and automated security controls; led products through multiple security reviews.</li>
+          <li>Maintains high velocity with 150+ code reviews in 6 months; mentors 5+ engineers; bridges scientist requirements with production engineering across product, analytics, and engineering teams.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">Python</span><span class="exp-tag">Java</span><span class="exp-tag">React</span>
+          <span class="exp-tag">AWS Lambda</span><span class="exp-tag">OpenSearch</span><span class="exp-tag">Claude/Bedrock</span>
+          <span class="exp-tag">RAG/GraphRAG</span><span class="exp-tag">SNS/SQS</span><span class="exp-tag">DynamoDB</span><span class="exp-tag">MCP</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <div>
+            <div class="exp-company">ForeverBrainTech Ltd.</div>
+            <div class="exp-role">Co-founder &amp; Software Development Lead</div>
+          </div>
+          <span class="badge badge-acquired">Acquired</span>
+        </div>
+        <div class="exp-meta">
+          <span><i class="fas fa-map-marker-alt"></i>Shanghai, China (Remote)</span>
+          <span><i class="fas fa-calendar-alt"></i>May 2020 – June 2022</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Architected a full-stack SaaS behavioral-assessment platform (React, Node.js, PostgreSQL) scaling to <strong>100k+ users</strong> across 5 provinces; designed for horizontal scaling supporting 10x growth.</li>
+          <li>Built end-to-end ML data pipeline: real-time behavioral data collection → analysis engine → automated report generation; wrote 20,000+ lines of production code with data scientists and psychologists.</li>
+          <li>Scaled engineering team from 0 to 10+ engineers. Company acquired by <strong>HengNao Tech</strong> (Summer 2022).</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">PostgreSQL</span>
+          <span class="exp-tag">Machine Learning</span><span class="exp-tag">SaaS</span>
+        </div>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-top">
+          <div>
+            <div class="exp-company">CNDS @ UPenn &amp; Computational Memory Lab @ Princeton</div>
+            <div class="exp-role">Research Assistant</div>
+          </div>
+        </div>
+        <div class="exp-meta">
+          <span><i class="fas fa-map-marker-alt"></i>Philadelphia, PA</span>
+          <span><i class="fas fa-calendar-alt"></i>September 2018 – May 2022</span>
+        </div>
+        <ul class="exp-bullets">
+          <li>Contributed to <strong>RT-Cloud</strong> open-source platform: redesigned cloud architecture for real-time fMRI neurofeedback experiments, integrating OpenNeuro datasets into processing pipelines (published in <em>NeuroImage</em>, 2022).</li>
+          <li>Built full-stack remote research platform (React, Node.js, MongoDB) serving <strong>100k+ participants</strong> during COVID-19, enabling multi-site behavioral data collection when physical labs closed.</li>
+          <li>Developed computational models using PyTorch/PsyNeuLink; published <strong>8 peer-reviewed papers</strong> (207 citations) in computational neuroscience.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="exp-tag">Python</span><span class="exp-tag">PyTorch</span><span class="exp-tag">fMRI</span>
+          <span class="exp-tag">React</span><span class="exp-tag">MongoDB</span><span class="exp-tag">AWS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <div class="section-eyebrow reveal">Education</div>
+    <h2 class="section-title reveal">Academic Background</h2>
+    <hr class="divider reveal">
+    <div class="edu-grid">
+      <div class="edu-card current reveal">
+        <span class="edu-badge in-progress">In Progress</span>
+        <div class="edu-school">NYU Tandon School of Engineering</div>
+        <div class="edu-degree">MS, Cybersecurity</div>
+        <div class="edu-period">January 2026 – Present</div>
+        <p class="edu-detail">Deepening expertise in security architecture, threat detection, and risk management to better protect systems in today's AI-powered world.</p>
+        <div class="edu-award"><i class="fas fa-award"></i> Cyber Fellow Scholarship</div>
+      </div>
+      <div class="edu-card reveal reveal-delay-1">
+        <span class="edu-badge completed">Completed</span>
+        <div class="edu-school">University of Pennsylvania</div>
+        <div class="edu-degree">BA, Computer Science &amp; Cognitive Science</div>
+        <div class="edu-period">Graduated May 2022 · Magna Cum Laude</div>
+        <p class="edu-detail">Double major spanning AI, algorithms, data systems, perception, decision-making, and neuroeconomics. Four years of parallel research in neuroimaging labs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="section-eyebrow reveal">Technical Skills</div>
+    <h2 class="section-title reveal">What I Work With</h2>
+    <hr class="divider reveal">
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <h4><i class="fas fa-code"></i> Languages</h4>
+        <div class="skill-items">
+          <span class="skill-pill">Python</span><span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span><span class="skill-pill">TypeScript</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <h4><i class="fas fa-desktop"></i> Frontend &amp; Full-Stack</h4>
+        <div class="skill-items">
+          <span class="skill-pill">React</span><span class="skill-pill">Node.js</span>
+          <span class="skill-pill">RESTful APIs</span><span class="skill-pill">WebSockets</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <h4><i class="fas fa-server"></i> Backend &amp; Infrastructure</h4>
+        <div class="skill-items">
+          <span class="skill-pill">Spring Boot</span><span class="skill-pill">AWS Lambda</span>
+          <span class="skill-pill">EC2</span><span class="skill-pill">Microservices</span>
+          <span class="skill-pill">Distributed Systems</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><i class="fas fa-robot"></i> AI / ML</h4>
+        <div class="skill-items">
+          <span class="skill-pill">LLMs (Claude/Bedrock)</span>
+          <span class="skill-pill">Multi-Agent Systems</span>
+          <span class="skill-pill">RAG / GraphRAG</span>
+          <span class="skill-pill">MCP</span><span class="skill-pill">PyTorch</span>
+          <span class="skill-pill">Harness Engineering</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-1">
+        <h4><i class="fas fa-database"></i> Data Engineering</h4>
+        <div class="skill-items">
+          <span class="skill-pill">SNS/SQS/Kinesis</span><span class="skill-pill">OpenSearch</span>
+          <span class="skill-pill">DynamoDB</span><span class="skill-pill">SQL</span>
+          <span class="skill-pill">ETL</span><span class="skill-pill">Real-time Streaming</span>
+        </div>
+      </div>
+      <div class="skill-card reveal reveal-delay-2">
+        <h4><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h4>
+        <div class="skill-items">
+          <span class="skill-pill">AWS (Lambda, S3, SageMaker)</span>
+          <span class="skill-pill">Kubernetes</span><span class="skill-pill">CI/CD</span>
+          <span class="skill-pill">API Gateway</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <h4><i class="fas fa-shield-alt"></i> Security</h4>
+        <div class="skill-items">
+          <span class="skill-pill">Auth/Authorization</span>
+          <span class="skill-pill">PII Protection</span>
+          <span class="skill-pill">Prompt Injection Defense</span>
+          <span class="skill-pill">Threat Modeling</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="section-eyebrow reveal">Portfolio</div>
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <hr class="divider reveal">
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Enterprise AI Data Platform @ Amazon</h3>
+        <p>Full-stack platform (React + Lambda/EC2 + OpenSearch) aggregating data from 20+ sources, serving 10k+ users with &lt;1s p95 latency and 99.99% uptime. Exposes 600k+ daily requests via secure REST APIs to 100+ downstream teams.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">AWS</span><span class="exp-tag">OpenSearch</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon"><i class="fas fa-brain"></i></div>
+        <h3>Multi-Agent AI Incident Analysis System</h3>
+        <p>Designed a multi-agent AI system using Claude (Bedrock) with MCP for coordination and RAG/GraphRAG for knowledge retrieval. Reduced incident triage time from 3 hours to 3 minutes — a 99% efficiency gain during high-stakes operational events.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">Claude/Bedrock</span><span class="exp-tag">MCP</span><span class="exp-tag">GraphRAG</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
+        <h3>AI Safety Guardrails System</h3>
+        <p>Designed and implemented production AI safety infrastructure: prompt injection defense, PII detection/scrubbing (&gt;99.9% accuracy), hallucination monitoring, and automated security controls — protecting data for 10k+ users across 100+ downstream teams.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">LLMs</span><span class="exp-tag">Security</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon"><i class="fas fa-users"></i></div>
+        <h3>ForeverBrainTech — Behavioral Assessment SaaS</h3>
+        <p>Co-founded and architected a full-stack behavioral assessment platform scaling to 100k+ users across 5 provinces. Built an end-to-end ML pipeline for automated behavioral reporting. Scaled team from 0 to 10+ engineers before acquisition.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">ML</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <div class="project-icon"><i class="fas fa-vial"></i></div>
+        <h3>CogBrain — Remote Research Platform</h3>
+        <p>Built a full-stack web platform serving 100k+ research participants during COVID-19. Enabled concurrent multi-site studies with real-time data aggregation when physical labs closed worldwide.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">MongoDB</span></div>
+        </div>
+      </div>
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>RT-Cloud — Real-time fMRI Platform</h3>
+        <p>Contributed to BrainIAK's open-source RT-Cloud: redesigned cloud architecture for real-time fMRI neurofeedback experiments, integrating OpenNeuro into processing pipelines. Published in <em>NeuroImage</em>, 2022.</p>
+        <div class="project-footer">
+          <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">PyTorch</span><span class="exp-tag">Cloud</span></div>
+          <a class="project-link" href="https://brainiak.org/" target="_blank">BrainIAK <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="container">
+    <div class="section-eyebrow reveal">Academia</div>
+    <h2 class="section-title reveal">Research &amp; Publications</h2>
+    <hr class="divider reveal">
+    <p class="research-intro reveal">
+      Four years of cognitive neuroscience research at UPenn, Princeton, and the University of Rochester —
+      studying decision-making, sleep, and brain imaging.
+      <strong>8 published papers · 207 citations.</strong>
+    </p>
+    <div class="papers">
+      <div class="paper-card reveal">
+        <span class="journal-name">Nature and Science of Sleep</span>
+        <p>Mao, T., Dinges, D., Deng, Y., <strong>Zhao, K.</strong>, et al. Impaired vigilant attention partly accounts for inhibition control deficits after total sleep deprivation and partial sleep restriction.</p>
+      </div>
+      <div class="paper-card reveal reveal-delay-1">
+        <span class="journal-name">Frontiers in Neuroscience</span>
+        <p>Arya, N., Vaish, A., <strong>Zhao, K.</strong>, &amp; Rao, H. Neural mechanisms underlying breast cancer related fatigue: a systematic review of neuroimaging studies.</p>
+      </div>
+      <div class="paper-card reveal reveal-delay-2">
+        <span class="journal-name">AAAI ICWSM</span>
+        <p>Giorgi, S., <strong>Zhao, K.</strong>, Feng, A.H., &amp; Martin, L.J. Author as character and narrator: Deconstructing personal narratives from the r/amitheasshole Reddit community. <em>Proceedings of the International AAAI Conference on Web and Social Media</em>, 17.</p>
+      </div>
+      <div class="paper-card reveal reveal-delay-3">
+        <span class="journal-name">NeuroImage</span>
+        <p>Wallace, G., Polcyn, S., Brooks, P.P., Mennen, A.C., <strong>Zhao, K.</strong>, et al. RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="section-eyebrow">Get in Touch</div>
+    <h2 class="section-title" style="margin-bottom:0.75rem;">Let's Connect</h2>
+    <p class="contact-desc">Happy to talk about AI systems, engineering challenges, research, or opportunities.</p>
+    <div class="contact-links">
+      <a class="contact-link" href="mailto:cocozhao321@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+      <a class="contact-link" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a class="contact-link" href="https://github.com/cocozhao321" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a class="contact-link" href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Ke (Coco) Zhao &nbsp;·&nbsp; Seattle, WA</p>
+</footer>
+
+<script>
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
 </html>
