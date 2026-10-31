@@ -1,0 +1,26 @@
+# Ke (Coco) Zhao
+
+> Software engineer at Amazon (Seattle, WA) specializing in trustworthy AI agents. Leads the agent evaluation workstream and the Model Context Protocol (MCP) platform that gives AI agents governed access to highly sensitive customer data; builds production AI guardrails (prompt-injection defense, PII protection, hallucination monitoring). 7+ years; startup co-founder (ForeverBrainTech, acquired 2022); 8 peer-reviewed papers, 249+ citations. BA Computer Science & Cognitive Science, University of Pennsylvania (Magna Cum Laude, 2022); MS Cybersecurity in progress at NYU Tandon (Cyber Fellow).
+
+## Profile
+- [Personal website](https://cocozhao321.github.io/): bio, experience, selected work, publications, contact
+- [LinkedIn](https://www.linkedin.com/in/coco-zhao-8555b3126/)
+- [GitHub](https://github.com/cocozhao321)
+- [Google Scholar](https://scholar.google.com/citations?user=1sRV25IAAAAJ)
+
+## Focus areas
+- Trustworthy AI agents: evaluation, governed data access, security
+- Agent evaluation: release gates, LLM-as-judge monitoring, and red-teaming for production agents
+- MCP servers, tools and agent skills that give AI agents governed access to data
+- Multi-agent systems on LLMs with RAG/GraphRAG
+- Large-scale data platforms and real-time pipelines on AWS
+- AI safety: prompt-injection defense, PII protection, hallucination monitoring
+
+## Selected publications
+- Giorgi, S., Zhao, K., Feng, A. H., & Martin, L. J. (2023). Author as Character and Narrator: Deconstructing Personal Narratives from the r/AmITheAsshole Reddit Community. ICWSM 17. https://doi.org/10.1609/icwsm.v17i1.22141
+- Wallace, G., ..., Zhao, K., ... Norman, K. A. (2022). RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI. NeuroImage 257. https://doi.org/10.1016/j.neuroimage.2022.119295
+- Quan, P., ..., Zhao, K., ... Rao, H. (2022). Cerebellum anatomy predicts individual risk-taking behavior and risk tolerance. NeuroImage 254. https://doi.org/10.1016/j.neuroimage.2022.119148
+- Mao, T., ..., Zhao, K., ... Rao, H. (2021). Impaired vigilant attention partly accounts for inhibition control deficits after total sleep deprivation and partial sleep restriction. Nature and Science of Sleep 13. https://doi.org/10.2147/NSS.S314769
+
+## Contact
+- Email: cocozhao321@gmail.com

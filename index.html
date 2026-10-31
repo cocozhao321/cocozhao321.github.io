@@ -1,764 +1,627 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ke (Coco) Zhao — Software Engineer & AI Builder at Amazon</title>
-  <meta name="description" content="Ke (Coco) Zhao is a Software Development Engineer at Amazon, building AI systems and scalable data platforms. UPenn CS & Cognitive Science graduate, published researcher, and startup co-founder.">
-  <meta name="keywords" content="Ke Zhao, Coco Zhao, Software Engineer, Amazon, AI systems, machine learning, UPenn, full-stack engineer">
-  <meta name="author" content="Ke Zhao">
+  <title>Ke (Coco) Zhao — Trustworthy AI Agents, Evals &amp; MCP</title>
+  <meta name="description" content="Ke (Coco) Zhao is an Amazon software engineer building trustworthy AI agents. Leads agent evaluation and the MCP platform for highly sensitive customer data.">
+  <meta name="author" content="Ke (Coco) Zhao">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <link rel="canonical" href="https://cocozhao321.github.io/">
+  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)">
 
-  <!-- Open Graph -->
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="Ke (Coco) Zhao — Software Engineer & AI Builder">
-  <meta property="og:description" content="SDE II at Amazon building AI systems and scalable data platforms. Published researcher with 8 papers and 207 citations.">
+  <meta property="og:site_name" content="Ke (Coco) Zhao">
+  <meta property="og:title" content="Ke (Coco) Zhao — Building Trustworthy AI Agents">
+  <meta property="og:description" content="Software engineer at Amazon leading agent evaluation and the MCP platform for AI agents on highly sensitive customer data. Startup co-founder and published researcher.">
   <meta property="og:url" content="https://cocozhao321.github.io/">
-  <meta property="og:image" content="https://cocozhao321.github.io/images/cocoz_2026.png">
+  <meta property="og:image" content="https://cocozhao321.github.io/images/coco-zhao.jpg">
+  <meta property="og:image:alt" content="Portrait of Ke (Coco) Zhao">
   <meta property="profile:first_name" content="Ke">
   <meta property="profile:last_name" content="Zhao">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ke (Coco) Zhao — Building Trustworthy AI Agents">
+  <meta name="twitter:description" content="Leading agent evaluation and MCP for AI agents on highly sensitive data at Amazon.">
+  <meta name="twitter:image" content="https://cocozhao321.github.io/images/coco-zhao.jpg">
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ke (Coco) Zhao — Software Engineer & AI Builder">
-  <meta name="twitter:description" content="SDE II at Amazon building AI systems and scalable data platforms.">
-  <meta name="twitter:image" content="https://cocozhao321.github.io/images/cocoz_2026.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/coco-zhao-360.jpg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ke Zhao",
-    "alternateName": "Coco Zhao",
-    "url": "https://cocozhao321.github.io/",
-    "image": "https://cocozhao321.github.io/images/cocoz_2026.png",
-    "email": "cocozhao321@gmail.com",
-    "jobTitle": "Software Development Engineer II",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Amazon"
-    },
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "University of Pennsylvania"
-      },
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "NYU Tandon School of Engineering"
-      }
-    ],
-    "sameAs": [
-      "https://www.linkedin.com/in/coco-zhao-8555b3126/",
-      "https://github.com/cocozhao321",
-      "https://scholar.google.com/citations?user=1sRV25IAAAAJ&hl=en"
-    ],
-    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Full-Stack Development", "Multi-Agent Systems", "Cybersecurity", "Computational Neuroscience"]
-  }
+  <script>
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      document.documentElement.dataset.theme = t;
+      document.documentElement.classList.add('js');
+    })();
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter+Tight:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
 
-    :root {
-      --hero-bg:    #211c18;
-      --hero-mid:   #2e2520;
-      --terra:      #b8673a;
-      --terra-light:#c97a4f;
-      --terra-dark: #945030;
-      --sienna:     #8b4513;
-      --body:       #fdf8f4;
-      --cream:      #f5ede3;
-      --cream2:     #ede4d8;
-      --white:      #ffffff;
-      --text:       #1e1814;
-      --text-mid:   #5a4e46;
-      --text-light: #8c7d74;
-      --border:     #e4d9ce;
-      --radius:     12px;
-    }
-
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--body); line-height: 1.6; overflow-x: hidden; }
-
-    /* ── SCROLL ANIMATIONS ── */
-    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
-    .reveal-delay-3 { transition-delay: 0.3s; }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      background: rgba(33, 28, 24, 0.94);
-      backdrop-filter: blur(16px);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 3rem; height: 58px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-    .nav-logo { font-family: 'Lora', serif; font-weight: 600; font-size: 1.05rem; color: #f5ede3; letter-spacing: 0.01em; }
-    .nav-logo span { color: var(--terra-light); font-style: italic; }
-    .nav-links { display: flex; gap: 2.25rem; list-style: none; }
-    .nav-links a { color: #a09288; text-decoration: none; font-size: 0.78rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: #f5ede3; }
-
-    /* ── HERO ── */
-    #hero {
-      min-height: 100vh;
-      display: flex; align-items: center; justify-content: center;
-      padding: 80px 3rem 5rem;
-      position: relative; overflow: hidden;
-      background: var(--hero-bg);
-    }
-    #hero::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
-      background:
-        radial-gradient(ellipse 70% 60% at 60% 35%, rgba(184,103,58,0.1) 0%, transparent 55%),
-        radial-gradient(ellipse 40% 40% at 15% 75%, rgba(148,80,48,0.07) 0%, transparent 50%);
-    }
-
-    .hero-inner { max-width: 980px; width: 100%; display: flex; align-items: center; gap: 5rem; position: relative; z-index: 1; }
-
-    /* photo */
-    .hero-photo-wrap { flex-shrink: 0; position: relative; }
-    .hero-photo {
-      width: 250px; height: 330px; border-radius: 16px;
-      object-fit: cover; object-position: center 8%;
-      display: block;
-      box-shadow: 0 24px 60px rgba(0,0,0,0.45), 0 0 0 1px rgba(184,103,58,0.25);
-    }
-    .hero-photo-wrap::after {
-      content: ''; position: absolute; inset: -1px; border-radius: 17px; pointer-events: none;
-      background: linear-gradient(160deg, rgba(184,103,58,0.35) 0%, transparent 40%, transparent 60%, rgba(148,80,48,0.2) 100%);
-    }
-
-    /* text */
-    .hero-text { flex: 1; }
-    .hero-eyebrow {
-      font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--terra-light); margin-bottom: 1.1rem;
-      display: flex; align-items: center; gap: 0.75rem;
-    }
-    .hero-eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--terra-light); display: inline-block; }
-    .hero-name {
-      font-family: 'Lora', serif;
-      font-size: clamp(2.4rem, 5vw, 3.4rem); font-weight: 600; line-height: 1.1;
-      color: #f5ede3; letter-spacing: -0.01em; margin-bottom: 0.75rem;
-    }
-    .hero-title { font-size: 0.95rem; color: #a09288; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
-    .hero-title strong { color: #d4a882; font-weight: 600; }
-    .hero-title .sep { color: #4a3f38; }
-    .hero-desc { font-size: 0.91rem; color: #c4b5a8; max-width: 460px; margin-bottom: 2.25rem; line-height: 1.85; }
-
-    .hero-links { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 2.75rem; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 0.5rem;
-      padding: 0.65rem 1.4rem; border-radius: 8px;
-      font-size: 0.8rem; font-weight: 600; text-decoration: none;
-      transition: all 0.2s; letter-spacing: 0.02em;
-    }
-    .btn-primary { background: var(--terra); color: #fff; box-shadow: 0 4px 16px rgba(184,103,58,0.35); }
-    .btn-primary:hover { background: var(--terra-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(184,103,58,0.4); }
-    .btn-outline { background: rgba(255,255,255,0.04); color: #a09288; border: 1px solid rgba(255,255,255,0.1); }
-    .btn-outline:hover { border-color: rgba(184,103,58,0.5); color: #f5ede3; background: rgba(184,103,58,0.08); }
-
-    .stat-row { display: flex; gap: 0; border-top: 1px solid rgba(255,255,255,0.07); padding-top: 2rem; }
-    .stat { flex: 1; padding: 0 1.25rem; border-right: 1px solid rgba(255,255,255,0.07); text-align: center; }
-    .stat:first-child { padding-left: 0; text-align: left; }
-    .stat:last-child { border-right: none; }
-    .stat-num { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 600; color: #f5ede3; line-height: 1; margin-bottom: 0.3rem; }
-    .stat-label { font-size: 0.65rem; color: #6b5e56; text-transform: uppercase; letter-spacing: 0.07em; }
-
-    /* ── SHARED SECTION STYLES ── */
-    section { padding: 5.5rem 3rem; }
-    .container { max-width: 940px; margin: 0 auto; }
-    .section-eyebrow {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
-      color: var(--terra); margin-bottom: 0.6rem;
-      display: flex; align-items: center; gap: 0.6rem;
-    }
-    .section-eyebrow::before { content: ''; width: 16px; height: 1px; background: var(--terra); display: inline-block; }
-    .section-title { font-family: 'Lora', serif; font-size: clamp(1.7rem, 3vw, 2.3rem); font-weight: 600; color: var(--text); letter-spacing: -0.01em; margin-bottom: 0.85rem; }
-    .section-sub { font-size: 0.91rem; color: var(--text-mid); max-width: 560px; line-height: 1.8; margin-bottom: 3rem; }
-    hr.divider { border: none; border-top: 1px solid var(--border); margin-bottom: 3rem; }
-
-    /* ── ABOUT ── */
-    #about { background: var(--white); }
-    .about-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 4rem; align-items: start; }
-    .about-text p { color: var(--text-mid); line-height: 1.9; margin-bottom: 1.1rem; font-size: 0.92rem; }
-    .about-text strong { color: var(--text); font-weight: 600; }
-    .hobbies-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-light); margin-bottom: 0.75rem; margin-top: 1.75rem; }
-    .tag-list { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-    .tag { font-size: 0.8rem; padding: 5px 13px; border-radius: 100px; border: 1px solid var(--border); color: var(--text-mid); background: var(--body); }
-
-    .pillars { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
-    .pillar {
-      padding: 1.2rem 1.4rem; border-bottom: 1px solid var(--border);
-      display: flex; align-items: flex-start; gap: 1rem;
-      transition: background 0.2s;
-    }
-    .pillar:last-child { border-bottom: none; }
-    .pillar:hover { background: var(--body); }
-    .pillar-icon {
-      flex-shrink: 0; width: 34px; height: 34px; border-radius: 8px;
-      background: linear-gradient(135deg, var(--terra), var(--sienna));
-      display: flex; align-items: center; justify-content: center;
-      color: #fff; font-size: 0.8rem; margin-top: 1px;
-    }
-    .pillar h4 { font-size: 0.86rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
-    .pillar p { font-size: 0.78rem; color: var(--text-mid); line-height: 1.6; }
-
-    /* ── EXPERIENCE ── */
-    #experience { background: var(--body); }
-    .exp-list { display: flex; flex-direction: column; gap: 1.25rem; }
-    .exp-card {
-      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
-      padding: 2rem 2.25rem; position: relative; overflow: hidden;
-      transition: box-shadow 0.25s, transform 0.25s;
-    }
-    .exp-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.07); transform: translateY(-2px); }
-    .exp-card.current::after {
-      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
-      background: linear-gradient(90deg, var(--terra), var(--sienna));
-    }
-    .exp-top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.3rem; flex-wrap: wrap; gap: 0.5rem; }
-    .exp-company { font-size: 1rem; font-weight: 700; color: var(--text); }
-    .badge { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; }
-    .badge-current { background: rgba(184,103,58,0.1); color: var(--terra-dark); border: 1px solid rgba(184,103,58,0.2); }
-    .badge-acquired { background: rgba(139,69,19,0.08); color: var(--sienna); border: 1px solid rgba(139,69,19,0.15); }
-    .exp-role { font-size: 0.86rem; font-weight: 600; color: var(--terra); margin-bottom: 0.6rem; }
-    .exp-meta { font-size: 0.76rem; color: var(--text-light); margin-bottom: 1.35rem; display: flex; gap: 1.5rem; flex-wrap: wrap; }
-    .exp-meta i { margin-right: 5px; opacity: 0.55; }
-    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-    .exp-bullets li { font-size: 0.85rem; color: var(--text-mid); padding-left: 1.2rem; position: relative; line-height: 1.7; }
-    .exp-bullets li::before { content: '–'; position: absolute; left: 0; color: var(--terra); font-weight: 600; }
-    .exp-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1.35rem; padding-top: 1.35rem; border-top: 1px solid var(--border); }
-    .exp-tag { font-family: 'JetBrains Mono', monospace; font-size: 0.67rem; background: var(--body); color: var(--text-mid); padding: 3px 9px; border-radius: 4px; border: 1px solid var(--border); }
-
-    /* ── EDUCATION ── */
-    #education { background: var(--white); }
-    .edu-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    .edu-card {
-      border-radius: var(--radius); border: 1px solid var(--border);
-      padding: 1.75rem 2rem; position: relative; overflow: hidden;
-      background: var(--body);
-      transition: box-shadow 0.2s;
-    }
-    .edu-card:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.06); }
-    .edu-card.current { background: linear-gradient(140deg, rgba(184,103,58,0.04) 0%, var(--body) 60%); border-color: rgba(184,103,58,0.25); }
-    .edu-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: linear-gradient(180deg, var(--terra), var(--sienna)); }
-    .edu-badge { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 3px 10px; border-radius: 100px; display: inline-block; margin-bottom: 1rem; }
-    .edu-badge.in-progress { background: rgba(184,103,58,0.1); color: var(--terra-dark); border: 1px solid rgba(184,103,58,0.2); }
-    .edu-badge.completed { background: var(--cream2); color: var(--text-light); border: 1px solid var(--border); }
-    .edu-school { font-size: 0.97rem; font-weight: 700; color: var(--text); margin-bottom: 0.2rem; }
-    .edu-degree { font-size: 0.86rem; font-weight: 600; color: var(--terra); margin-bottom: 0.25rem; }
-    .edu-period { font-size: 0.76rem; color: var(--text-light); margin-bottom: 0.9rem; }
-    .edu-detail { font-size: 0.81rem; color: var(--text-mid); line-height: 1.75; }
-    .edu-award { display: inline-flex; align-items: center; gap: 0.4rem; margin-top: 0.9rem; font-size: 0.77rem; font-weight: 600; color: var(--terra-dark); }
-
-    /* ── SKILLS ── */
-    #skills { background: var(--body); }
-    .skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.25rem; }
-    .skill-card {
-      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
-      padding: 1.5rem 1.6rem; transition: border-color 0.2s, box-shadow 0.2s;
-    }
-    .skill-card:hover { border-color: rgba(184,103,58,0.3); box-shadow: 0 4px 16px rgba(0,0,0,0.05); }
-    .skill-card h4 { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
-    .skill-items { display: flex; flex-wrap: wrap; gap: 0.4rem; }
-    .skill-pill { font-size: 0.75rem; background: var(--body); color: var(--text-mid); padding: 4px 11px; border-radius: 100px; border: 1px solid var(--border); font-weight: 500; }
-
-    /* ── PROJECTS ── */
-    #projects { background: var(--white); }
-    .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(390px, 1fr)); gap: 1.5rem; }
-    .project-card {
-      background: var(--body); border-radius: var(--radius); border: 1px solid var(--border);
-      padding: 1.75rem; display: flex; flex-direction: column;
-      transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
-    }
-    .project-card:hover { box-shadow: 0 10px 32px rgba(0,0,0,0.08); transform: translateY(-3px); border-color: rgba(184,103,58,0.25); }
-    .project-icon {
-      width: 42px; height: 42px; border-radius: 10px;
-      background: linear-gradient(135deg, var(--terra), var(--sienna));
-      display: flex; align-items: center; justify-content: center;
-      color: #fff; font-size: 0.95rem; margin-bottom: 1.1rem;
-      box-shadow: 0 4px 12px rgba(184,103,58,0.3);
-    }
-    .project-card h3 { font-size: 0.93rem; font-weight: 700; color: var(--text); margin-bottom: 0.6rem; }
-    .project-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.78; flex: 1; margin-bottom: 1.25rem; }
-    .project-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
-    .project-link { font-size: 0.77rem; font-weight: 600; color: var(--terra); text-decoration: none; display: flex; align-items: center; gap: 0.4rem; transition: gap 0.2s, color 0.2s; }
-    .project-link:hover { color: var(--sienna); gap: 0.65rem; }
-
-    /* ── RESEARCH ── */
-    #research { background: var(--body); }
-    .research-intro { font-size: 0.91rem; color: var(--text-mid); max-width: 640px; margin-bottom: 2.5rem; line-height: 1.88; }
-    .papers { display: flex; flex-direction: column; gap: 1rem; }
-    .paper-card {
-      background: var(--white); border-radius: var(--radius); border: 1px solid var(--border);
-      padding: 1.25rem 1.6rem; border-left: 3px solid var(--terra);
-      transition: box-shadow 0.2s, transform 0.2s;
-    }
-    .paper-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); transform: translateX(4px); }
-    .journal-name { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--terra); margin-bottom: 0.5rem; display: block; }
-    .paper-card p { font-size: 0.82rem; color: var(--text-mid); line-height: 1.7; }
-    .paper-card a { color: var(--terra); text-decoration: none; }
-    .paper-card a:hover { text-decoration: underline; }
-
-    /* ── CONTACT ── */
-    #contact {
-      background: var(--hero-bg); text-align: center;
-      position: relative; overflow: hidden;
-    }
-    #contact::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
-      background: radial-gradient(ellipse 55% 50% at 50% 50%, rgba(184,103,58,0.08) 0%, transparent 70%);
-    }
-    #contact .container { position: relative; z-index: 1; }
-    #contact .section-eyebrow { color: var(--terra-light); justify-content: center; }
-    #contact .section-eyebrow::before { display: none; }
-    #contact .section-title { color: #f0e6dc; }
-    .contact-desc { font-size: 0.9rem; color: #8c7d74; max-width: 400px; margin: 0 auto 2.75rem; line-height: 1.8; }
-    .contact-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
-    .contact-link {
-      display: flex; align-items: center; gap: 0.65rem;
-      padding: 0.85rem 1.6rem; border-radius: 10px;
-      background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
-      color: #c4b5a8; text-decoration: none; font-size: 0.83rem; font-weight: 500;
-      transition: all 0.22s; backdrop-filter: blur(8px);
-    }
-    .contact-link i { color: var(--terra-light); }
-    .contact-link:hover { background: rgba(184,103,58,0.12); border-color: rgba(184,103,58,0.35); color: #f0e6dc; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
-
-    footer { background: #170f0a; text-align: center; padding: 1.75rem; font-size: 0.76rem; color: #4a3f38; border-top: 1px solid rgba(255,255,255,0.03); }
-
-    /* ── RESPONSIVE ── */
-    @media (max-width: 768px) {
-      nav { padding: 0 1.5rem; }
-      .nav-links { display: none; }
-      section { padding: 4rem 1.5rem; }
-      .hero-inner { flex-direction: column; gap: 2.5rem; }
-      .hero-photo { width: 160px; height: 212px; }
-      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-      .edu-grid { grid-template-columns: 1fr; }
-      .projects-grid { grid-template-columns: 1fr; }
-      .stat-row { flex-wrap: wrap; }
-      .stat { min-width: 40%; text-align: left; padding: 0.5rem 0; border-right: none; }
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://cocozhao321.github.io/#website",
+        "url": "https://cocozhao321.github.io/",
+        "name": "Ke (Coco) Zhao",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://cocozhao321.github.io/#profile",
+        "url": "https://cocozhao321.github.io/",
+        "name": "Ke (Coco) Zhao — Building Trustworthy AI Agents",
+        "isPartOf": { "@id": "https://cocozhao321.github.io/#website" },
+        "dateModified": "2026-10-30",
+        "mainEntity": { "@id": "https://cocozhao321.github.io/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://cocozhao321.github.io/#person",
+        "name": "Ke Zhao",
+        "alternateName": ["Coco Zhao", "Ke (Coco) Zhao"],
+        "givenName": "Ke",
+        "familyName": "Zhao",
+        "url": "https://cocozhao321.github.io/",
+        "image": "https://cocozhao321.github.io/images/coco-zhao.jpg",
+        "email": "mailto:cocozhao321@gmail.com",
+        "jobTitle": "Software Engineer",
+        "description": "Software engineer at Amazon who builds trustworthy AI agents: leads agent evaluation and the Model Context Protocol (MCP) platform that gives agents governed access to highly sensitive customer data. Startup co-founder and published neuroscience researcher.",
+        "worksFor": { "@type": "Organization", "name": "Amazon", "url": "https://www.amazon.com" },
+        "homeLocation": { "@type": "Place", "name": "Seattle, WA" },
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania", "url": "https://www.upenn.edu" },
+          { "@type": "CollegeOrUniversity", "name": "NYU Tandon School of Engineering", "url": "https://engineering.nyu.edu" }
+        ],
+        "award": ["NYU Cyber Fellow", "Magna Cum Laude, University of Pennsylvania"],
+        "sameAs": [
+          "https://www.linkedin.com/in/coco-zhao-8555b3126/",
+          "https://github.com/cocozhao321",
+          "https://scholar.google.com/citations?user=1sRV25IAAAAJ"
+        ],
+        "knowsAbout": ["Trustworthy AI", "AI agent evaluation", "LLM evaluation", "AI security", "AI governance", "Model Context Protocol (MCP)", "AI agents", "Multi-agent systems", "Large language models", "Retrieval-augmented generation", "AI safety", "Distributed systems", "Data engineering", "Full-stack development", "Cybersecurity", "Cognitive neuroscience", "fMRI"]
+      },
+      { "@type": "ScholarlyArticle", "headline": "Author as Character and Narrator: Deconstructing Personal Narratives from the r/AmITheAsshole Reddit Community", "datePublished": "2023", "isPartOf": "Proceedings of the International AAAI Conference on Web and Social Media", "sameAs": "https://doi.org/10.1609/icwsm.v17i1.22141", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI", "datePublished": "2022", "isPartOf": "NeuroImage", "sameAs": "https://doi.org/10.1016/j.neuroimage.2022.119295", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "Cerebellum anatomy predicts individual risk-taking behavior and risk tolerance", "datePublished": "2022", "isPartOf": "NeuroImage", "sameAs": "https://doi.org/10.1016/j.neuroimage.2022.119148", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "Impaired Vigilant Attention Partly Accounts for Inhibition Control Deficits After Total Sleep Deprivation and Partial Sleep Restriction", "datePublished": "2021", "isPartOf": "Nature and Science of Sleep", "sameAs": "https://doi.org/10.2147/NSS.S314769", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "Neural Mechanisms Underlying Breast Cancer Related Fatigue: A Systematic Review of Neuroimaging Studies", "datePublished": "2021", "isPartOf": "Frontiers in Neuroscience", "sameAs": "https://doi.org/10.3389/fnins.2021.735945", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "Altered spontaneous brain activity in obsessive-compulsive personality disorder", "datePublished": "2020", "isPartOf": "Comprehensive Psychiatry", "sameAs": "https://doi.org/10.1016/j.comppsych.2019.152144", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "High sensation seeking is associated with behavioral and neural insensitivity to increased negative outcomes during decision-making under uncertainty", "datePublished": "2019", "isPartOf": "Cognitive, Affective, & Behavioral Neuroscience", "sameAs": "https://doi.org/10.3758/s13415-019-00751-x", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
+      { "@type": "ScholarlyArticle", "headline": "Test-retest reliability of cerebral blood flow for assessing brain function at rest and during a vigilance task", "datePublished": "2019", "isPartOf": "NeuroImage", "sameAs": "https://doi.org/10.1016/j.neuroimage.2019.03.016", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] }
+    ]
+  }
+  </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">Coco <span>Zhao</span></div>
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#research">Research</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-inner">
-    <div class="hero-photo-wrap">
-      <img class="hero-photo" src="images/cocoz_2026.png" alt="Coco Zhao">
-    </div>
-    <div class="hero-text">
-      <div class="hero-eyebrow">Software Engineer &amp; AI Builder</div>
-      <h1 class="hero-name">Ke (Coco) Zhao</h1>
-      <p class="hero-title">
-        SDE II <span class="sep">·</span> <strong>Amazon</strong> <span class="sep">·</span> Seattle, WA
-      </p>
-      <p class="hero-desc">
-        Full-stack engineer with 7+ years building production AI systems and scalable platforms.
-        I architect multi-agent AI infrastructure, design real-time data pipelines, and bridge
-        research with engineering — from brain imaging labs to enterprise AI at Amazon.
-      </p>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-        <a class="btn btn-outline" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a class="btn btn-outline" href="https://github.com/cocozhao321" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-        <a class="btn btn-outline" href="mailto:cocozhao321@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      </div>
-      <div class="stat-row">
-        <div class="stat">
-          <div class="stat-num">7+</div>
-          <div class="stat-label">Years Building</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">40M+</div>
-          <div class="stat-label">Docs / Day</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">8</div>
-          <div class="stat-label">Papers</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">207</div>
-          <div class="stat-label">Citations</div>
-        </div>
-      </div>
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="brand" href="#top" aria-label="Ke (Coco) Zhao — home">
+      <span class="brand-mark" aria-hidden="true">CZ</span>
+      <span class="brand-name">Coco Zhao</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#focus">Focus</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Research</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="kbd-btn" type="button" data-open-palette aria-label="Open command menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <kbd>⌘K</kbd>
+      </button>
+      <button class="icon-btn" type="button" id="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" type="button" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
     </div>
   </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-name">
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Trustworthy AI agents · Evaluation · MCP · AI security</p>
+      <h1 id="hero-name">Ke (Coco) Zhao</h1>
+      <p class="hero-role" aria-live="polite">
+        <span class="sr-only">I build AI agents people can trust: evaluated, governed and secure.</span>
+        <span aria-hidden="true"><span class="typed" data-words="I build AI agents you can trust.|I lead agent evaluation at Amazon.|I lead MCP for agents on sensitive data.|I turn research into production systems."></span><span class="caret"></span></span>
+      </p>
+      <p class="hero-desc">
+        I'm a software engineer at <strong>Amazon</strong> who specializes in making AI agents <strong>trustworthy</strong>:
+        measured by rigorous evaluation, given governed access to data, and secured for
+        <strong>highly sensitive customer data</strong>. I lead our agent evaluation workstream and the
+        <strong>Model Context Protocol (MCP)</strong> platform our agents use. 7+ years of shipping, from founding a startup to running production systems at 99.99% uptime.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#focus">What I do <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-ghost" href="#experience">Experience</a>
+      </div>
+      <ul class="socials" aria-label="Profiles">
+        <li><a href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank" rel="noopener me" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-4.9c0-1.17-.02-2.68-1.63-2.68-1.64 0-1.89 1.28-1.89 2.6V21h-4z"/></svg></a></li>
+        <li><a href="https://github.com/cocozhao321" target="_blank" rel="noopener me" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.7 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&amp;hl=en" target="_blank" rel="noopener me" aria-label="Google Scholar"><svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2 1 9l11 7 9-5.73V17h2V9L12 2zm-6.5 9.9V16c0 2.2 2.9 4 6.5 4s6.5-1.8 6.5-4v-4.1L12 16l-6.5-4.1z"/></svg></a></li>
+        <li><button type="button" class="copy-email" data-copy="cocozhao321@gmail.com" aria-label="Copy email address"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>cocozhao321@gmail.com</span></button></li>
+      </ul>
+    </div>
+    <figure class="hero-photo">
+      <div class="photo-frame">
+        <img src="images/coco-zhao.jpg" srcset="images/coco-zhao-360.jpg 360w, images/coco-zhao.jpg 720w" sizes="(max-width: 860px) 220px, 340px" width="720" height="960" alt="Portrait of Ke (Coco) Zhao" fetchpriority="high">
+      </div>
+      <figcaption class="photo-badge"><span class="dot" aria-hidden="true"></span> Seattle, WA</figcaption>
+    </figure>
+  </div>
+  <div class="container">
+    <dl class="stats">
+      <div class="stat"><dt>Years building software</dt><dd><span data-count="7">7</span>+</dd></div>
+      <div class="stat"><dt>Documents processed daily</dt><dd><span data-count="40">40</span>M+</dd></div>
+      <div class="stat"><dt>Platform uptime</dt><dd>99.99%</dd></div>
+      <div class="stat"><dt>Faster incident triage (3h → 3min)</dt><dd><span data-count="99">99</span>%</dd></div>
+    </dl>
+  </div>
+  <a class="scroll-hint" href="#focus" aria-label="Scroll to content"><span></span></a>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- FOCUS -->
+<section id="focus" class="section" aria-labelledby="focus-title">
   <div class="container">
-    <div class="section-eyebrow reveal">About</div>
-    <h2 class="section-title reveal">Engineer × Researcher × Builder</h2>
-    <hr class="divider reveal">
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>Hey, I'm Coco — a software engineer who straddles the line between production engineering and applied research. I grew up in Wenzhou, China, moved to Philadelphia at 16, and graduated from UPenn with a double major in Computer Science and Cognitive Science, Magna Cum Laude.</p>
-        <p>At Amazon, I build enterprise AI infrastructure that handles massive scale — multi-agent systems powered by LLMs, real-time data pipelines, and AI safety systems protecting data integrity for thousands of downstream users.</p>
-        <p>Before Amazon, I co-founded a behavioral-assessment tech startup (acquired in 2022), and spent four years running neuroimaging research at UPenn, Princeton, and UPenn Medicine — publishing 8 papers along the way.</p>
-        <div class="hobbies-label">Outside of work</div>
-        <div class="tag-list">
-          <span class="tag">🎹 Piano</span>
-          <span class="tag">🧩 Rubik's Cube</span>
-          <span class="tag">✈️ Travelling</span>
-          <span class="tag">🔢 Sudoku</span>
-        </div>
+    <header class="section-head reveal">
+      <p class="kicker">01 — Focus</p>
+      <h2 id="focus-title">I build AI agents people can trust</h2>
+      <p class="section-sub">A demo agent is easy. An agent a business can rely on needs evidence it works, a strict limit on what it can access, and guardrails for when things go wrong. That is the part I own.</p>
+    </header>
+    <ol class="trust">
+      <li class="card spot trust-card reveal">
+        <span class="trust-step" aria-hidden="true">01</span>
+        <div class="now-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+        <h3>Evaluate</h3>
+        <p><strong>I lead the agent evaluation workstream:</strong> release gates, LLM-as-judge monitoring, and red-teaming for production agents, so we ship on evidence instead of demos.</p>
+        <ul class="tags"><li>LLM-as-judge</li><li>Release gates</li><li>Red-teaming</li></ul>
+      </li>
+      <li class="card spot trust-card reveal">
+        <span class="trust-step" aria-hidden="true">02</span>
+        <div class="now-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
+        <h3>Govern access</h3>
+        <p><strong>I lead the MCP platform</strong> that gives agents one secure, auditable way to reach <strong>highly sensitive customer data</strong>, with authentication, fine-grained authorization and data-classification controls built in.</p>
+        <ul class="tags"><li>MCP</li><li>AuthN / AuthZ</li><li>Data classification</li></ul>
+      </li>
+      <li class="card spot trust-card reveal">
+        <span class="trust-step" aria-hidden="true">03</span>
+        <div class="now-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Guard</h3>
+        <p><strong>I build the guardrails that run in production:</strong> prompt-injection defense, PII detection and scrubbing at &gt;99.9% accuracy, and hallucination monitoring. I've taken AI products through multiple security reviews, and I'm adding formal security training as an NYU Cyber Fellow.</p>
+        <ul class="tags"><li>Prompt-injection defense</li><li>PII protection</li><li>Threat modeling</li></ul>
+      </li>
+    </ol>
+    <div class="fit card reveal">
+      <div>
+        <p class="label">At a glance</p>
+        <h3>Trustworthy AI agents and AI platforms, end to end</h3>
       </div>
-      <div class="pillars reveal reveal-delay-1">
-        <div class="pillar">
-          <div class="pillar-icon"><i class="fas fa-brain"></i></div>
-          <div>
-            <h4>AI Systems at Scale</h4>
-            <p>Multi-agent AI with LLMs, RAG/GraphRAG, MCP — processing 40M+ documents daily at 99.99% uptime.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon"><i class="fas fa-layer-group"></i></div>
-          <div>
-            <h4>Full-Stack Engineer</h4>
-            <p>React to Lambda to OpenSearch — end-to-end ownership across the full stack at enterprise scale.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon"><i class="fas fa-flask"></i></div>
-          <div>
-            <h4>Researcher Turned Engineer</h4>
-            <p>8 peer-reviewed papers, 207 citations in computational neuroscience. I translate science into production systems.</p>
-          </div>
-        </div>
-        <div class="pillar">
-          <div class="pillar-icon"><i class="fas fa-rocket"></i></div>
-          <div>
-            <h4>Startup Co-Founder</h4>
-            <p>Built ForeverBrainTech from 0 to 100k+ users and 10+ engineers before acquisition in 2022.</p>
-          </div>
-        </div>
+      <ul class="fit-list">
+        <li><b>Leads</b> agent evaluation and the MCP platform</li>
+        <li><b>Owns</b> systems end to end: 40M+ docs/day at 99.99% uptime</li>
+        <li><b>Secures</b> AI on highly sensitive customer data</li>
+        <li><b>Grows</b> engineers: mentor to 5+, 150+ code reviews in 6 months</li>
+        <li><b>Founder</b> of a startup that grew from 0 to 100k+ users and was acquired</li>
+        <li><b>Researcher:</b> 8 papers, 249+ citations</li>
+      </ul>
+      <div class="fit-cta">
+        <a class="btn btn-primary" href="mailto:cocozhao321@gmail.com?subject=Opportunity%20for%20Coco%20Zhao">Contact me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="section" aria-labelledby="exp-title">
   <div class="container">
-    <div class="section-eyebrow reveal">Career</div>
-    <h2 class="section-title reveal">Work Experience</h2>
-    <hr class="divider reveal">
-    <div class="exp-list">
+    <header class="section-head reveal">
+      <p class="kicker">02 — Experience</p>
+      <h2 id="exp-title">Where I've worked</h2>
+    </header>
+    <ol class="timeline">
+      <li class="tl-item current reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <article class="card tl-card">
+          <header class="tl-head">
+            <div>
+              <h3>Software Engineer · <span class="org">Amazon</span></h3>
+              <p class="meta"><time datetime="2022-07">Jul 2022</time> – Present · Seattle, WA</p>
+            </div>
+            <span class="badge badge-live">Current</span>
+          </header>
+          <ul class="bullets">
+            <li><strong>Lead the agent evaluation workstream:</strong> release gates, LLM-as-judge monitoring, and red-teaming for production agents.</li>
+            <li><strong>Lead the MCP platform</strong> for understanding the voice of the customer: MCP servers, tools and agent skills that give AI agents across the organization one secure, governed way to reach <strong>highly sensitive customer data</strong>.</li>
+            <li>Architected a full-stack enterprise data platform (React, Lambda/EC2, OpenSearch) processing <strong>40M+ documents daily</strong> from 20+ sources at 99.99% uptime; serves 10k+ users with &lt;1s p95 latency across 600k+ daily requests.</li>
+            <li>Designed a <strong>multi-agent AI system</strong> on Claude (Bedrock) with MCP for agent coordination and RAG/GraphRAG for retrieval; its incident-analysis agent cut investigation time from <strong>3 hours to 3 minutes</strong>.</li>
+            <li>Built real-time ingestion (SNS/SQS/Kinesis) with &lt;5 min latency, and REST APIs with OAuth, rate limiting and access controls serving 100+ downstream teams.</li>
+            <li>Shipped AI safety guardrails: prompt-injection defense, PII detection and scrubbing (&gt;99.9% accuracy), hallucination monitoring; led products through multiple security reviews.</li>
+            <li>Set technical direction through design docs and security reviews; 150+ code reviews in 6 months; mentor to 5+ engineers; work across science, product and engineering.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies">
+            <li>Agent evals</li><li>MCP</li><li>Claude / Bedrock</li><li>RAG / GraphRAG</li><li>Python</li><li>Java</li><li>TypeScript</li><li>React</li><li>Lambda</li><li>OpenSearch</li><li>DynamoDB</li><li>Kinesis</li>
+          </ul>
+        </article>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <article class="card tl-card">
+          <header class="tl-head">
+            <div>
+              <h3>Co-founder &amp; Software Development Lead · <span class="org">ForeverBrainTech</span></h3>
+              <p class="meta"><time datetime="2020-05">May 2020</time> – <time datetime="2022-06">Jun 2022</time> · Shanghai (remote)</p>
+            </div>
+            <span class="badge">Acquired</span>
+          </header>
+          <ul class="bullets">
+            <li>Architected a full-stack SaaS behavioral-assessment platform (React, Node.js, PostgreSQL) that scaled to <strong>100k+ users</strong> across 5 provinces, designed for 10x horizontal growth.</li>
+            <li>Built the ML data pipeline end to end, from real-time behavioral data collection to analysis to automated reports; wrote 20,000+ lines of production code alongside data scientists and psychologists.</li>
+            <li>Grew engineering from 0 to 10+ engineers. Acquired by <strong>HengNao Tech</strong> in summer 2022.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>ML pipelines</li><li>SaaS</li></ul>
+        </article>
+      </li>
+      <li class="tl-item reveal">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <article class="card tl-card">
+          <header class="tl-head">
+            <div>
+              <h3>Research Assistant · <span class="org">UPenn CNDS · Princeton Computational Memory Lab · Penn Medicine</span></h3>
+              <p class="meta"><time datetime="2018-09">Sep 2018</time> – <time datetime="2022-05">May 2022</time> · Philadelphia, PA</p>
+            </div>
+          </header>
+          <ul class="bullets">
+            <li>Contributed to the open-source <strong>RT-Cloud</strong> framework: redesigned its cloud architecture for real-time fMRI neurofeedback and integrated OpenNeuro datasets (<em>NeuroImage</em>, 2022).</li>
+            <li>Built a full-stack remote research platform (React, Node.js, MongoDB) that served <strong>100k+ participants</strong> during COVID-19, keeping multi-site studies running while labs were closed.</li>
+            <li>Built computational models with PyTorch and PsyNeuLink; co-authored <strong>8 peer-reviewed papers</strong>.</li>
+          </ul>
+          <ul class="tags" aria-label="Technologies"><li>Python</li><li>PyTorch</li><li>fMRI</li><li>React</li><li>MongoDB</li><li>AWS</li></ul>
+        </article>
+      </li>
+    </ol>
+  </div>
+</section>
 
-      <div class="exp-card current reveal">
-        <div class="exp-top">
-          <div>
-            <div class="exp-company">Amazon.com Services LLC</div>
-            <div class="exp-role">Software Development Engineer II</div>
-          </div>
-          <span class="badge badge-current">Current</span>
-        </div>
-        <div class="exp-meta">
-          <span><i class="fas fa-map-marker-alt"></i>Seattle, WA</span>
-          <span><i class="fas fa-calendar-alt"></i>July 2022 – Present</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Architected full-stack enterprise data platform (React, Lambda/EC2, OpenSearch) processing 40M+ documents daily from 20+ sources with 99.99% uptime; serves 10k+ users with &lt;1s p95 latency across 600k+ daily requests.</li>
-          <li>Designed <strong>multi-agent AI system</strong> using Claude (Bedrock) with MCP for agent coordination and RAG/GraphRAG for knowledge retrieval; built an incident-analysis agent that cut investigation time from 3 hours to 3 minutes — a 99% efficiency gain.</li>
-          <li>Built real-time data ingestion pipeline (SNS/SQS/Kinesis) achieving &lt;5 min latency; developed REST APIs with OAuth, rate limiting, and access controls — exposing data to 100+ downstream teams.</li>
-          <li>Implemented AI safety guardrails: prompt injection defense, PII detection/scrubbing (&gt;99.9% accuracy), hallucination monitoring, and automated security controls; led products through multiple security reviews.</li>
-          <li>Maintains high velocity with 150+ code reviews in 6 months; mentors 5+ engineers; bridges scientist requirements with production engineering across product, analytics, and engineering teams.</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="exp-tag">Python</span><span class="exp-tag">Java</span><span class="exp-tag">React</span>
-          <span class="exp-tag">AWS Lambda</span><span class="exp-tag">OpenSearch</span><span class="exp-tag">Claude/Bedrock</span>
-          <span class="exp-tag">RAG/GraphRAG</span><span class="exp-tag">SNS/SQS</span><span class="exp-tag">DynamoDB</span><span class="exp-tag">MCP</span>
-        </div>
-      </div>
-
-      <div class="exp-card reveal">
-        <div class="exp-top">
-          <div>
-            <div class="exp-company">ForeverBrainTech Ltd.</div>
-            <div class="exp-role">Co-founder &amp; Software Development Lead</div>
-          </div>
-          <span class="badge badge-acquired">Acquired</span>
-        </div>
-        <div class="exp-meta">
-          <span><i class="fas fa-map-marker-alt"></i>Shanghai, China (Remote)</span>
-          <span><i class="fas fa-calendar-alt"></i>May 2020 – June 2022</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Architected a full-stack SaaS behavioral-assessment platform (React, Node.js, PostgreSQL) scaling to <strong>100k+ users</strong> across 5 provinces; designed for horizontal scaling supporting 10x growth.</li>
-          <li>Built end-to-end ML data pipeline: real-time behavioral data collection → analysis engine → automated report generation; wrote 20,000+ lines of production code with data scientists and psychologists.</li>
-          <li>Scaled engineering team from 0 to 10+ engineers. Company acquired by <strong>HengNao Tech</strong> (Summer 2022).</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">PostgreSQL</span>
-          <span class="exp-tag">Machine Learning</span><span class="exp-tag">SaaS</span>
-        </div>
-      </div>
-
-      <div class="exp-card reveal">
-        <div class="exp-top">
-          <div>
-            <div class="exp-company">CNDS @ UPenn &amp; Computational Memory Lab @ Princeton</div>
-            <div class="exp-role">Research Assistant</div>
-          </div>
-        </div>
-        <div class="exp-meta">
-          <span><i class="fas fa-map-marker-alt"></i>Philadelphia, PA</span>
-          <span><i class="fas fa-calendar-alt"></i>September 2018 – May 2022</span>
-        </div>
-        <ul class="exp-bullets">
-          <li>Contributed to <strong>RT-Cloud</strong> open-source platform: redesigned cloud architecture for real-time fMRI neurofeedback experiments, integrating OpenNeuro datasets into processing pipelines (published in <em>NeuroImage</em>, 2022).</li>
-          <li>Built full-stack remote research platform (React, Node.js, MongoDB) serving <strong>100k+ participants</strong> during COVID-19, enabling multi-site behavioral data collection when physical labs closed.</li>
-          <li>Developed computational models using PyTorch/PsyNeuLink; published <strong>8 peer-reviewed papers</strong> (207 citations) in computational neuroscience.</li>
-        </ul>
-        <div class="exp-tags">
-          <span class="exp-tag">Python</span><span class="exp-tag">PyTorch</span><span class="exp-tag">fMRI</span>
-          <span class="exp-tag">React</span><span class="exp-tag">MongoDB</span><span class="exp-tag">AWS</span>
-        </div>
-      </div>
-
+<!-- WORK -->
+<section id="work" class="section alt" aria-labelledby="work-title">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="kicker">03 — Selected work</p>
+      <h2 id="work-title">Things I've built</h2>
+    </header>
+    <div class="filters reveal" role="group" aria-label="Filter projects">
+      <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter" data-filter="trust" aria-pressed="false">Trustworthy AI</button>
+      <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI &amp; agents</button>
+      <button type="button" class="filter" data-filter="platform" aria-pressed="false">Platforms</button>
+      <button type="button" class="filter" data-filter="research" aria-pressed="false">Research</button>
+      <button type="button" class="filter" data-filter="startup" aria-pressed="false">Startup</button>
+    </div>
+    <div class="projects">
+      <article class="card spot project featured" data-cat="ai platform trust">
+        <div class="project-top"><span class="project-kind">Amazon · Current</span><span class="badge badge-live">Leading</span></div>
+        <h3>MCP data-access platform for AI agents</h3>
+        <p>A Model Context Protocol layer that gives any AI agent one secure, governed interface for understanding the voice of the customer from highly sensitive data. It provides tools for exploring and summarizing customer insights, plus agent skills that chain those tools into full deep dives. Authentication, authorization and data-classification controls are built in.</p>
+        <ul class="tags"><li>MCP</li><li>Agent skills</li><li>LLMs</li><li>Security</li></ul>
+      </article>
+      <article class="card spot project" data-cat="ai trust">
+        <div class="project-top"><span class="project-kind">Amazon · Current</span><span class="badge badge-live">Leading</span></div>
+        <h3>Agent evaluation</h3>
+        <p>Lead the agent evaluation workstream: release gates, LLM-as-judge monitoring, and red-teaming for production agents.</p>
+        <ul class="tags"><li>LLM-as-judge</li><li>Release gates</li><li>Red-teaming</li></ul>
+      </article>
+      <article class="card spot project" data-cat="ai trust">
+        <div class="project-top"><span class="project-kind">Amazon</span></div>
+        <h3>AI safety guardrails</h3>
+        <p>Production guardrails for LLM features: prompt-injection defense, PII scrubbing at &gt;99.9% accuracy, hallucination monitoring and automated security controls.</p>
+        <ul class="tags"><li>Python</li><li>LLMs</li><li>Security</li></ul>
+      </article>
+      <article class="card spot project" data-cat="ai">
+        <div class="project-top"><span class="project-kind">Amazon</span></div>
+        <h3>Multi-agent incident analysis</h3>
+        <p>Specialist agents on Claude (Bedrock), coordinated over MCP, with RAG/GraphRAG retrieval. Incident triage went from 3 hours to 3 minutes.</p>
+        <ul class="tags"><li>Claude / Bedrock</li><li>MCP</li><li>GraphRAG</li></ul>
+      </article>
+      <article class="card spot project" data-cat="platform">
+        <div class="project-top"><span class="project-kind">Amazon</span></div>
+        <h3>Enterprise data platform</h3>
+        <p>React + Lambda/EC2 + OpenSearch, fed by 20+ sources. Handles 40M+ documents a day at 99.99% uptime with &lt;1s p95 latency for 10k+ users.</p>
+        <ul class="tags"><li>React</li><li>AWS</li><li>OpenSearch</li><li>Kinesis</li></ul>
+      </article>
+      <article class="card spot project" data-cat="startup platform">
+        <div class="project-top"><span class="project-kind">ForeverBrainTech · Acquired</span></div>
+        <h3>Behavioral-assessment SaaS</h3>
+        <p>Co-founded and architected the product: 100k+ users across 5 provinces, an end-to-end ML reporting pipeline, and a team grown from 0 to 10+ engineers.</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>ML</li></ul>
+      </article>
+      <article class="card spot project" data-cat="research platform">
+        <div class="project-top"><span class="project-kind">UPenn</span></div>
+        <h3>CogBrain remote research platform</h3>
+        <p>A web platform that served 100k+ research participants during COVID-19, with multi-site studies and real-time data aggregation.</p>
+        <ul class="tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
+      </article>
+      <article class="card spot project" data-cat="research">
+        <div class="project-top"><span class="project-kind">Princeton · Open source</span></div>
+        <h3>RT-Cloud: real-time fMRI</h3>
+        <p>Cloud architecture for BrainIAK's real-time fMRI neurofeedback framework, published in <em>NeuroImage</em> (2022).</p>
+        <ul class="tags"><li>Python</li><li>Cloud</li><li>fMRI</li></ul>
+        <a class="link" href="https://github.com/brainiak/rt-cloud" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </article>
+      <article class="card spot project" data-cat="research">
+        <div class="project-top"><span class="project-kind">Open source</span></div>
+        <h3>OpenNeuro → BIDS-I toolkit</h3>
+        <p>Downloads OpenNeuro datasets and converts them to BIDS-Incremental so they can be streamed into real-time fMRI pipelines.</p>
+        <ul class="tags"><li>Python</li><li>BIDS</li><li>Neuroimaging</li></ul>
+        <a class="link" href="https://github.com/cocozhao321/OpenNeuro" target="_blank" rel="noopener">View on GitHub <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+      </article>
     </div>
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education">
+<!-- ABOUT -->
+<section id="about" class="section alt" aria-labelledby="about-title">
   <div class="container">
-    <div class="section-eyebrow reveal">Education</div>
-    <h2 class="section-title reveal">Academic Background</h2>
-    <hr class="divider reveal">
-    <div class="edu-grid">
-      <div class="edu-card current reveal">
-        <span class="edu-badge in-progress">In Progress</span>
-        <div class="edu-school">NYU Tandon School of Engineering</div>
-        <div class="edu-degree">MS, Cybersecurity</div>
-        <div class="edu-period">January 2026 – Present</div>
-        <p class="edu-detail">Deepening expertise in security architecture, threat detection, and risk management to better protect systems in today's AI-powered world.</p>
-        <div class="edu-award"><i class="fas fa-award"></i> Cyber Fellow Scholarship</div>
+    <header class="section-head reveal">
+      <p class="kicker">04 — About</p>
+      <h2 id="about-title">Engineer × researcher × builder</h2>
+    </header>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi, I'm Coco. I grew up in Wenzhou, China, moved to Philadelphia at 16, and graduated <strong>Magna Cum Laude</strong> from the <strong>University of Pennsylvania</strong> with a double major in Computer Science and Cognitive Science.</p>
+        <p>At <strong>Amazon</strong> I work on the parts of AI agents that decide whether people can trust them: how agents are evaluated, what data they can reach, and what stops them when something goes wrong. The data involved is highly sensitive customer data, so security and governance are part of every design.</p>
+        <p>Before Amazon I co-founded <strong>ForeverBrainTech</strong>, a behavioral-assessment startup that grew to 100k+ users and was acquired in 2022, and spent four years doing neuroimaging research at UPenn, Princeton and Penn Medicine, which led to 8 peer-reviewed papers.</p>
+        <p class="label">Outside of work</p>
+        <ul class="chips" aria-label="Hobbies">
+          <li>🎹 Piano</li><li>🧩 Rubik's Cube</li><li>✈️ Travel</li><li>🔢 Sudoku</li>
+        </ul>
+        <div class="bio-box">
+          <div class="bio-head">
+            <p class="label">Short bio, free to reuse</p>
+            <button class="btn-mini" type="button" data-copy-target="#short-bio">Copy</button>
+          </div>
+          <p id="short-bio">Ke (Coco) Zhao is a software engineer at Amazon who specializes in trustworthy AI agents, leading the agent evaluation workstream and the Model Context Protocol (MCP) platform that gives agents governed access to highly sensitive customer data. Coco previously co-founded ForeverBrainTech (acquired 2022) and conducted cognitive neuroscience research at the University of Pennsylvania and Princeton, publishing eight peer-reviewed papers. Coco holds a BA in Computer Science and Cognitive Science from the University of Pennsylvania and is completing an MS in Cybersecurity at NYU as a Cyber Fellow.</p>
+        </div>
       </div>
-      <div class="edu-card reveal reveal-delay-1">
-        <span class="edu-badge completed">Completed</span>
-        <div class="edu-school">University of Pennsylvania</div>
-        <div class="edu-degree">BA, Computer Science &amp; Cognitive Science</div>
-        <div class="edu-period">Graduated May 2022 · Magna Cum Laude</div>
-        <p class="edu-detail">Double major spanning AI, algorithms, data systems, perception, decision-making, and neuroeconomics. Four years of parallel research in neuroimaging labs.</p>
-      </div>
+      <dl class="facts card reveal">
+        <div><dt>Role</dt><dd>Software Engineer, Amazon</dd></div>
+        <div><dt>Specialty</dt><dd>Trustworthy AI agents: evaluation, governed data access (MCP), AI security</dd></div>
+        <div><dt>Experience</dt><dd>7+ years: Amazon, startup co-founder, research labs</dd></div>
+        <div><dt>Location</dt><dd>Seattle, WA</dd></div>
+        <div><dt>Education</dt><dd>BA CS &amp; Cognitive Science, UPenn (Magna Cum Laude) · MS Cybersecurity, NYU (in progress)</dd></div>
+        <div><dt>Research</dt><dd>8 peer-reviewed papers · 249+ citations · h-index 8</dd></div>
+      </dl>
     </div>
   </div>
 </section>
 
 <!-- SKILLS -->
-<section id="skills">
+<section id="skills" class="section" aria-labelledby="skills-title">
   <div class="container">
-    <div class="section-eyebrow reveal">Technical Skills</div>
-    <h2 class="section-title reveal">What I Work With</h2>
-    <hr class="divider reveal">
-    <div class="skills-grid">
-      <div class="skill-card reveal">
-        <h4><i class="fas fa-code"></i> Languages</h4>
-        <div class="skill-items">
-          <span class="skill-pill">Python</span><span class="skill-pill">Java</span>
-          <span class="skill-pill">JavaScript</span><span class="skill-pill">TypeScript</span>
-        </div>
-      </div>
-      <div class="skill-card reveal reveal-delay-1">
-        <h4><i class="fas fa-desktop"></i> Frontend &amp; Full-Stack</h4>
-        <div class="skill-items">
-          <span class="skill-pill">React</span><span class="skill-pill">Node.js</span>
-          <span class="skill-pill">RESTful APIs</span><span class="skill-pill">WebSockets</span>
-        </div>
-      </div>
-      <div class="skill-card reveal reveal-delay-2">
-        <h4><i class="fas fa-server"></i> Backend &amp; Infrastructure</h4>
-        <div class="skill-items">
-          <span class="skill-pill">Spring Boot</span><span class="skill-pill">AWS Lambda</span>
-          <span class="skill-pill">EC2</span><span class="skill-pill">Microservices</span>
-          <span class="skill-pill">Distributed Systems</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h4><i class="fas fa-robot"></i> AI / ML</h4>
-        <div class="skill-items">
-          <span class="skill-pill">LLMs (Claude/Bedrock)</span>
-          <span class="skill-pill">Multi-Agent Systems</span>
-          <span class="skill-pill">RAG / GraphRAG</span>
-          <span class="skill-pill">MCP</span><span class="skill-pill">PyTorch</span>
-          <span class="skill-pill">Harness Engineering</span>
-        </div>
-      </div>
-      <div class="skill-card reveal reveal-delay-1">
-        <h4><i class="fas fa-database"></i> Data Engineering</h4>
-        <div class="skill-items">
-          <span class="skill-pill">SNS/SQS/Kinesis</span><span class="skill-pill">OpenSearch</span>
-          <span class="skill-pill">DynamoDB</span><span class="skill-pill">SQL</span>
-          <span class="skill-pill">ETL</span><span class="skill-pill">Real-time Streaming</span>
-        </div>
-      </div>
-      <div class="skill-card reveal reveal-delay-2">
-        <h4><i class="fas fa-cloud"></i> Cloud &amp; DevOps</h4>
-        <div class="skill-items">
-          <span class="skill-pill">AWS (Lambda, S3, SageMaker)</span>
-          <span class="skill-pill">Kubernetes</span><span class="skill-pill">CI/CD</span>
-          <span class="skill-pill">API Gateway</span>
-        </div>
-      </div>
-      <div class="skill-card reveal">
-        <h4><i class="fas fa-shield-alt"></i> Security</h4>
-        <div class="skill-items">
-          <span class="skill-pill">Auth/Authorization</span>
-          <span class="skill-pill">PII Protection</span>
-          <span class="skill-pill">Prompt Injection Defense</span>
-          <span class="skill-pill">Threat Modeling</span>
-        </div>
-      </div>
+    <header class="section-head reveal">
+      <p class="kicker">05 — Toolkit</p>
+      <h2 id="skills-title">What I work with</h2>
+    </header>
+    <div class="skills reveal">
+      <div class="skill-group"><h3>Trustworthy AI</h3><ul class="tags"><li>Agent &amp; LLM evaluation</li><li>LLM-as-judge</li><li>Red-teaming</li><li>Guardrails</li><li>Prompt-injection defense</li><li>PII protection</li><li>Data governance</li></ul></div>
+      <div class="skill-group"><h3>AI / ML</h3><ul class="tags"><li>MCP</li><li>Multi-agent systems</li><li>LLMs (Claude, Bedrock)</li><li>RAG / GraphRAG</li><li>Agent skills &amp; harnesses</li><li>PyTorch</li></ul></div>
+      <div class="skill-group"><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li></ul></div>
+      <div class="skill-group"><h3>Backend &amp; cloud</h3><ul class="tags"><li>AWS Lambda</li><li>EC2</li><li>API Gateway</li><li>S3</li><li>SageMaker</li><li>Spring Boot</li><li>Kubernetes</li><li>CI/CD</li></ul></div>
+      <div class="skill-group"><h3>Data</h3><ul class="tags"><li>OpenSearch</li><li>DynamoDB</li><li>SNS / SQS / Kinesis</li><li>Real-time streaming</li><li>ETL</li></ul></div>
+      <div class="skill-group"><h3>Frontend</h3><ul class="tags"><li>React</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li></ul></div>
+      <div class="skill-group"><h3>Security</h3><ul class="tags"><li>AuthN / AuthZ</li><li>Fine-grained access control</li><li>Threat modeling</li><li>Security reviews</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<!-- PUBLICATIONS -->
+<section id="publications" class="section alt" aria-labelledby="pubs-title">
   <div class="container">
-    <div class="section-eyebrow reveal">Portfolio</div>
-    <h2 class="section-title reveal">Featured Projects</h2>
-    <hr class="divider reveal">
-    <div class="projects-grid">
-      <div class="project-card reveal">
-        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
-        <h3>Enterprise AI Data Platform @ Amazon</h3>
-        <p>Full-stack platform (React + Lambda/EC2 + OpenSearch) aggregating data from 20+ sources, serving 10k+ users with &lt;1s p95 latency and 99.99% uptime. Exposes 600k+ daily requests via secure REST APIs to 100+ downstream teams.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">AWS</span><span class="exp-tag">OpenSearch</span></div>
-        </div>
-      </div>
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-icon"><i class="fas fa-brain"></i></div>
-        <h3>Multi-Agent AI Incident Analysis System</h3>
-        <p>Designed a multi-agent AI system using Claude (Bedrock) with MCP for coordination and RAG/GraphRAG for knowledge retrieval. Reduced incident triage time from 3 hours to 3 minutes — a 99% efficiency gain during high-stakes operational events.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">Claude/Bedrock</span><span class="exp-tag">MCP</span><span class="exp-tag">GraphRAG</span></div>
-        </div>
-      </div>
-      <div class="project-card reveal">
-        <div class="project-icon"><i class="fas fa-shield-halved"></i></div>
-        <h3>AI Safety Guardrails System</h3>
-        <p>Designed and implemented production AI safety infrastructure: prompt injection defense, PII detection/scrubbing (&gt;99.9% accuracy), hallucination monitoring, and automated security controls — protecting data for 10k+ users across 100+ downstream teams.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">LLMs</span><span class="exp-tag">Security</span></div>
-        </div>
-      </div>
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-icon"><i class="fas fa-users"></i></div>
-        <h3>ForeverBrainTech — Behavioral Assessment SaaS</h3>
-        <p>Co-founded and architected a full-stack behavioral assessment platform scaling to 100k+ users across 5 provinces. Built an end-to-end ML pipeline for automated behavioral reporting. Scaled team from 0 to 10+ engineers before acquisition.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">ML</span></div>
-        </div>
-      </div>
-      <div class="project-card reveal">
-        <div class="project-icon"><i class="fas fa-vial"></i></div>
-        <h3>CogBrain — Remote Research Platform</h3>
-        <p>Built a full-stack web platform serving 100k+ research participants during COVID-19. Enabled concurrent multi-site studies with real-time data aggregation when physical labs closed worldwide.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">React</span><span class="exp-tag">Node.js</span><span class="exp-tag">MongoDB</span></div>
-        </div>
-      </div>
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
-        <h3>RT-Cloud — Real-time fMRI Platform</h3>
-        <p>Contributed to BrainIAK's open-source RT-Cloud: redesigned cloud architecture for real-time fMRI neurofeedback experiments, integrating OpenNeuro into processing pipelines. Published in <em>NeuroImage</em>, 2022.</p>
-        <div class="project-footer">
-          <div class="exp-tags"><span class="exp-tag">Python</span><span class="exp-tag">PyTorch</span><span class="exp-tag">Cloud</span></div>
-          <a class="project-link" href="https://brainiak.org/" target="_blank">BrainIAK <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+    <header class="section-head reveal">
+      <p class="kicker">06 — Research</p>
+      <h2 id="pubs-title">Publications</h2>
+      <p class="section-sub">Cognitive neuroscience research on decision-making, sleep and brain imaging, plus one NLP paper. 8 peer-reviewed papers, 249+ citations, h-index 8 (<a href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>). Click <em>Cite</em> to copy APA or BibTeX.</p>
+    </header>
+    <div class="filters reveal" role="group" aria-label="Filter publications">
+      <button type="button" class="pfilter is-active" data-topic="all" aria-pressed="true">All</button>
+      <button type="button" class="pfilter" data-topic="decision" aria-pressed="false">Decision-making</button>
+      <button type="button" class="pfilter" data-topic="sleep" aria-pressed="false">Sleep &amp; attention</button>
+      <button type="button" class="pfilter" data-topic="clinical" aria-pressed="false">Clinical</button>
+      <button type="button" class="pfilter" data-topic="methods" aria-pressed="false">Methods &amp; software</button>
+      <button type="button" class="pfilter" data-topic="nlp" aria-pressed="false">NLP</button>
     </div>
+    <ol class="pubs" reversed>
+      <li class="pub reveal" data-topic="nlp" data-type="inproceedings" data-key="giorgi2023author" data-year="2023" data-doi="10.1609/icwsm.v17i1.22141" data-venue="Proceedings of the International AAAI Conference on Web and Social Media" data-volume="17" data-pages="233-244" data-authors="Giorgi, Salvatore; Zhao, Ke; Feng, Alexander H.; Martin, Lara J.">
+        <span class="pub-year">2023</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Author as Character and Narrator: Deconstructing Personal Narratives from the r/AmITheAsshole Reddit Community</h3>
+          <p class="pub-authors">Giorgi, S., <b>Zhao, K.</b>, Feng, A. H., &amp; Martin, L. J.</p>
+          <p class="pub-venue"><em>AAAI ICWSM</em>, 17, 233–244</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.1609/icwsm.v17i1.22141" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="methods" data-type="article" data-key="wallace2022rtcloud" data-year="2022" data-doi="10.1016/j.neuroimage.2022.119295" data-venue="NeuroImage" data-volume="257" data-pages="119295" data-authors="Wallace, Grant; Polcyn, Stephen; Brooks, Paula P.; Mennen, Anne C.; Zhao, Ke; Scotti, Paul S.; Michelmann, Sebastian; Li, Kai; Turk-Browne, Nicholas B.; Cohen, Jonathan D.; Norman, Kenneth A.">
+        <span class="pub-year">2022</span>
+        <div class="pub-body">
+          <h3 class="pub-title">RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI</h3>
+          <p class="pub-authors">Wallace, G., Polcyn, S., Brooks, P. P., Mennen, A. C., <b>Zhao, K.</b>, Scotti, P. S., … Norman, K. A.</p>
+          <p class="pub-venue"><em>NeuroImage</em>, 257, 119295</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.1016/j.neuroimage.2022.119295" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="decision" data-type="article" data-key="quan2022cerebellum" data-year="2022" data-doi="10.1016/j.neuroimage.2022.119148" data-venue="NeuroImage" data-volume="254" data-pages="119148" data-authors="Quan, Peng; He, Lisheng; Mao, Tianxin; Fang, Zhuo; Deng, Yao; Pan, Yu; Zhang, Xiaocui; Zhao, Ke; Lei, Hui; Detre, John A.; Kable, Joseph W.; Rao, Hengyi">
+        <span class="pub-year">2022</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Cerebellum anatomy predicts individual risk-taking behavior and risk tolerance</h3>
+          <p class="pub-authors">Quan, P., He, L., Mao, T., Fang, Z., Deng, Y., Pan, Y., Zhang, X., <b>Zhao, K.</b>, … Rao, H.</p>
+          <p class="pub-venue"><em>NeuroImage</em>, 254, 119148</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.1016/j.neuroimage.2022.119148" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="sleep" data-type="article" data-key="mao2021impaired" data-year="2021" data-doi="10.2147/NSS.S314769" data-venue="Nature and Science of Sleep" data-volume="13" data-pages="1545-1560" data-authors="Mao, Tianxin; Dinges, David; Deng, Yao; Zhao, Ke; Yang, Zijing; Lei, Hui; Fang, Zhuo; Yang, Fan Nils; Galli, Olga; Goel, Namni; Basner, Mathias; Rao, Hengyi">
+        <span class="pub-year">2021</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Impaired vigilant attention partly accounts for inhibition control deficits after total sleep deprivation and partial sleep restriction</h3>
+          <p class="pub-authors">Mao, T., Dinges, D., Deng, Y., <b>Zhao, K.</b>, Yang, Z., … Rao, H.</p>
+          <p class="pub-venue"><em>Nature and Science of Sleep</em>, 13, 1545–1560</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.2147/NSS.S314769" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="clinical" data-type="article" data-key="arya2021neural" data-year="2021" data-doi="10.3389/fnins.2021.735945" data-venue="Frontiers in Neuroscience" data-volume="15" data-pages="735945" data-authors="Arya, Nisha; Vaish, Anya; Zhao, Ke; Rao, Hengyi">
+        <span class="pub-year">2021</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Neural mechanisms underlying breast cancer related fatigue: A systematic review of neuroimaging studies</h3>
+          <p class="pub-authors">Arya, N., Vaish, A., <b>Zhao, K.</b>, &amp; Rao, H.</p>
+          <p class="pub-venue"><em>Frontiers in Neuroscience</em>, 15, 735945</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.3389/fnins.2021.735945" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="clinical" data-type="article" data-key="lei2020altered" data-year="2020" data-doi="10.1016/j.comppsych.2019.152144" data-venue="Comprehensive Psychiatry" data-volume="96" data-pages="152144" data-authors="Lei, Hui; Huang, Li; Li, Jingxuan; Liu, Wanting; Fan, Jie; Zhang, Xiaocui; Xia, Jie; Zhao, Ke; Zhu, Xiongzhao; Rao, Hengyi">
+        <span class="pub-year">2020</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Altered spontaneous brain activity in obsessive-compulsive personality disorder</h3>
+          <p class="pub-authors">Lei, H., Huang, L., Li, J., Liu, W., Fan, J., Zhang, X., Xia, J., <b>Zhao, K.</b>, Zhu, X., &amp; Rao, H.</p>
+          <p class="pub-venue"><em>Comprehensive Psychiatry</em>, 96, 152144</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.1016/j.comppsych.2019.152144" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="decision" data-type="article" data-key="xu2019high" data-year="2019" data-doi="10.3758/s13415-019-00751-x" data-venue="Cognitive, Affective, &amp; Behavioral Neuroscience" data-volume="19" data-number="6" data-pages="1352-1363" data-authors="Xu, Sihua; Luo, Lijuan; Xiao, Zhiguo; Zhao, Ke; Wang, Hua; Wang, Cencen; Rao, Hengyi">
+        <span class="pub-year">2019</span>
+        <div class="pub-body">
+          <h3 class="pub-title">High sensation seeking is associated with behavioral and neural insensitivity to increased negative outcomes during decision-making under uncertainty</h3>
+          <p class="pub-authors">Xu, S., Luo, L., Xiao, Z., <b>Zhao, K.</b>, Wang, H., Wang, C., &amp; Rao, H.</p>
+          <p class="pub-venue"><em>Cognitive, Affective, &amp; Behavioral Neuroscience</em>, 19(6), 1352–1363</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.3758/s13415-019-00751-x" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+      <li class="pub reveal" data-topic="methods sleep" data-type="article" data-key="yang2019test" data-year="2019" data-doi="10.1016/j.neuroimage.2019.03.016" data-venue="NeuroImage" data-volume="193" data-pages="157-166" data-authors="Yang, Fan Nils; Xu, Sihua; Spaeth, Andrea; Galli, Olga; Zhao, Ke; Fang, Zhuo; Basner, Mathias; Dinges, David F.; Detre, John A.; Rao, Hengyi">
+        <span class="pub-year">2019</span>
+        <div class="pub-body">
+          <h3 class="pub-title">Test-retest reliability of cerebral blood flow for assessing brain function at rest and during a vigilance task</h3>
+          <p class="pub-authors">Yang, F. N., Xu, S., Spaeth, A., Galli, O., <b>Zhao, K.</b>, Fang, Z., … Rao, H.</p>
+          <p class="pub-venue"><em>NeuroImage</em>, 193, 157–166</p>
+        </div>
+        <div class="pub-actions"><a class="btn-mini" href="https://doi.org/10.1016/j.neuroimage.2019.03.016" target="_blank" rel="noopener">DOI</a><button class="btn-mini" type="button" data-cite>Cite</button></div>
+      </li>
+    </ol>
   </div>
 </section>
 
-<!-- RESEARCH -->
-<section id="research">
+<!-- EDUCATION -->
+<section id="education" class="section" aria-labelledby="edu-title">
   <div class="container">
-    <div class="section-eyebrow reveal">Academia</div>
-    <h2 class="section-title reveal">Research &amp; Publications</h2>
-    <hr class="divider reveal">
-    <p class="research-intro reveal">
-      Four years of cognitive neuroscience research at UPenn, Princeton, and the University of Rochester —
-      studying decision-making, sleep, and brain imaging.
-      <strong>8 published papers · 207 citations.</strong>
-    </p>
-    <div class="papers">
-      <div class="paper-card reveal">
-        <span class="journal-name">Nature and Science of Sleep</span>
-        <p>Mao, T., Dinges, D., Deng, Y., <strong>Zhao, K.</strong>, et al. Impaired vigilant attention partly accounts for inhibition control deficits after total sleep deprivation and partial sleep restriction.</p>
-      </div>
-      <div class="paper-card reveal reveal-delay-1">
-        <span class="journal-name">Frontiers in Neuroscience</span>
-        <p>Arya, N., Vaish, A., <strong>Zhao, K.</strong>, &amp; Rao, H. Neural mechanisms underlying breast cancer related fatigue: a systematic review of neuroimaging studies.</p>
-      </div>
-      <div class="paper-card reveal reveal-delay-2">
-        <span class="journal-name">AAAI ICWSM</span>
-        <p>Giorgi, S., <strong>Zhao, K.</strong>, Feng, A.H., &amp; Martin, L.J. Author as character and narrator: Deconstructing personal narratives from the r/amitheasshole Reddit community. <em>Proceedings of the International AAAI Conference on Web and Social Media</em>, 17.</p>
-      </div>
-      <div class="paper-card reveal reveal-delay-3">
-        <span class="journal-name">NeuroImage</span>
-        <p>Wallace, G., Polcyn, S., Brooks, P.P., Mennen, A.C., <strong>Zhao, K.</strong>, et al. RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI.</p>
-      </div>
+    <header class="section-head reveal">
+      <p class="kicker">07 — Education</p>
+      <h2 id="edu-title">Education</h2>
+    </header>
+    <div class="edu-grid">
+      <article class="card spot edu reveal">
+        <span class="badge badge-live">In progress</span>
+        <h3>NYU Tandon School of Engineering</h3>
+        <p class="edu-degree">MS, Cybersecurity</p>
+        <p class="meta"><time datetime="2026-01">Jan 2026</time> – Present</p>
+        <p>Security architecture, threat detection and risk management for systems built around AI.</p>
+        <p class="award"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg> Cyber Fellow Scholarship</p>
+      </article>
+      <article class="card spot edu reveal">
+        <span class="badge">Completed</span>
+        <h3>University of Pennsylvania</h3>
+        <p class="edu-degree">BA, Computer Science &amp; Cognitive Science</p>
+        <p class="meta">Graduated <time datetime="2022-05">May 2022</time></p>
+        <p>Double major covering AI, algorithms, data systems, perception, decision-making and neuroeconomics, with four years of research in neuroimaging labs alongside.</p>
+        <p class="award"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 8 5-3 5 3-1.5-8"/></svg> Magna Cum Laude</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <div class="section-eyebrow">Get in Touch</div>
-    <h2 class="section-title" style="margin-bottom:0.75rem;">Let's Connect</h2>
-    <p class="contact-desc">Happy to talk about AI systems, engineering challenges, research, or opportunities.</p>
-    <div class="contact-links">
-      <a class="contact-link" href="mailto:cocozhao321@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      <a class="contact-link" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-      <a class="contact-link" href="https://github.com/cocozhao321" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      <a class="contact-link" href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+<section id="contact" class="section contact" aria-labelledby="contact-title">
+  <div class="container reveal">
+    <p class="kicker">08 — Contact</p>
+    <h2 id="contact-title">Let's talk</h2>
+    <p class="section-sub">Recruiters, hiring managers and fellow builders are welcome. I'm happy to talk about trustworthy AI agents, agent evaluation, MCP, AI security or new opportunities.</p>
+    <div class="contact-cta">
+      <a class="btn btn-primary btn-lg" href="mailto:cocozhao321@gmail.com">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> cocozhao321@gmail.com
+      </a>
+      <button class="btn btn-ghost btn-lg" type="button" data-copy="cocozhao321@gmail.com">Copy email</button>
     </div>
+    <ul class="contact-links">
+      <li><a href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank" rel="noopener me">LinkedIn ↗</a></li>
+      <li><a href="https://github.com/cocozhao321" target="_blank" rel="noopener me">GitHub ↗</a></li>
+      <li><a href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&amp;hl=en" target="_blank" rel="noopener me">Google Scholar ↗</a></li>
+    </ul>
   </div>
 </section>
 
-<footer>
-  <p>© 2026 Ke (Coco) Zhao &nbsp;·&nbsp; Seattle, WA</p>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>© 2026 Ke (Coco) Zhao · Seattle, WA</p>
+    <p class="muted">Views are my own. Press <kbd>⌘K</kbd> to navigate.</p>
+  </div>
 </footer>
 
-<script>
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.1 });
-  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
-</script>
+<!-- Cite dialog -->
+<dialog id="cite-dialog" aria-labelledby="cite-title">
+  <form method="dialog" class="dialog-inner">
+    <header class="dialog-head">
+      <h2 id="cite-title">Cite this paper</h2>
+      <button class="icon-btn" value="close" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </header>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" class="tab is-active" aria-selected="true" data-fmt="apa">APA</button>
+      <button type="button" role="tab" class="tab" aria-selected="false" data-fmt="bibtex">BibTeX</button>
+    </div>
+    <pre class="cite-out" id="cite-out" tabindex="0"></pre>
+    <div class="dialog-foot"><button type="button" class="btn btn-primary" id="cite-copy">Copy</button></div>
+  </form>
+</dialog>
+
+<!-- Command palette -->
+<dialog id="palette" aria-label="Command menu">
+  <div class="palette-inner">
+    <div class="palette-search">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="palette-input" type="text" placeholder="Jump to a section or run an action…" autocomplete="off" spellcheck="false" aria-label="Search commands" role="combobox" aria-expanded="true" aria-controls="palette-list">
+      <kbd>esc</kbd>
+    </div>
+    <ul id="palette-list" role="listbox"></ul>
+  </div>
+</dialog>
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>

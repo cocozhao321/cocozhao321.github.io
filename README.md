@@ -1,20 +1,13 @@
-# My cool website
+# cocozhao321.github.io
 
-This is my personal website! I will update randomly.
+Personal website of Ke (Coco) Zhao: https://cocozhao321.github.io/
 
-ヽ(๏∀๏ )ﾉ
+Static HTML/CSS/JS on GitHub Pages; no build step.
 
+- `index.html`: all content and SEO metadata (JSON-LD `ProfilePage` + `Person` + `ScholarlyArticle`)
+- `assets/css/site.css`, `assets/js/site.js`: styles and interactions
+- `sitemap.xml`, `robots.txt`, `llms.txt`: crawler/LLM discovery
 
-## ← Credit
+Local preview: `python3 -m http.server 8000`
 
-Demo Images:
-		Unsplash (unsplash.com)
-
-Icons:
-		Font Awesome (fontawesome.io)
-
-Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
-
+When updating content, also bump `dateModified` in the JSON-LD and `lastmod` in `sitemap.xml`.
