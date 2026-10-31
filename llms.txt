@@ -1,11 +1,10 @@
 # Ke (Coco) Zhao
 
-> Software engineer at Amazon (Seattle, WA) specializing in trustworthy AI agents. Leads the agent evaluation workstream and the Model Context Protocol (MCP) platform that gives AI agents governed access to highly sensitive customer data; builds production AI guardrails (prompt-injection defense, PII protection, hallucination monitoring). 7+ years; startup co-founder (ForeverBrainTech, acquired 2022); 8 peer-reviewed papers, 249+ citations. BA Computer Science & Cognitive Science, University of Pennsylvania (Magna Cum Laude, 2022); MS Cybersecurity in progress at NYU Tandon (Cyber Fellow).
+> Software engineer at Amazon (Seattle, WA) specializing in trustworthy AI agents. Leads the agent evaluation workstream and the Model Context Protocol (MCP) platform that give a multi-agent customer-service platform governed access to highly sensitive customer data; builds production AI guardrails (prompt-injection defense, PII protection, hallucination monitoring). 6+ years shipping production software, including 4 at Amazon and 2 as co-founder of ForeverBrainTech (acquired 2022); 8 peer-reviewed papers, 249+ citations. BA Computer Science & Cognitive Science, University of Pennsylvania (Magna Cum Laude, 2022); MS Cybersecurity in progress at NYU Tandon (Cyber Fellow).
 
 ## Profile
 - [Personal website](https://cocozhao321.github.io/): bio, experience, selected work, publications, contact
 - [LinkedIn](https://www.linkedin.com/in/coco-zhao-8555b3126/)
-- [GitHub](https://github.com/cocozhao321)
 - [Google Scholar](https://scholar.google.com/citations?user=1sRV25IAAAAJ)
 
 ## Focus areas

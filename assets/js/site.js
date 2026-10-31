@@ -28,9 +28,6 @@
     toast(msg);
   };
   $$('[data-copy]').forEach((b) => b.addEventListener('click', () => copy(b.dataset.copy, 'Email copied')));
-  $$('[data-copy-target]').forEach((b) =>
-    b.addEventListener('click', () => copy($(b.dataset.copyTarget).textContent.trim(), 'Bio copied'))
-  );
 
   /* Theme */
   const setTheme = (t) => {
@@ -92,29 +89,6 @@
     el.style.transitionDelay = `${(i % 3) * 70}ms`;
     revealObs.observe(el);
   });
-
-  /* Count-up stats */
-  const countObs = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => {
-        if (!e.isIntersecting) return;
-        countObs.unobserve(e.target);
-        const el = e.target;
-        const end = +el.dataset.count;
-        if (reduceMotion) return;
-        const t0 = performance.now();
-        const dur = 1400;
-        const tick = (t) => {
-          const k = Math.min(1, (t - t0) / dur);
-          el.textContent = Math.round(end * (1 - Math.pow(1 - k, 3)));
-          if (k < 1) requestAnimationFrame(tick);
-        };
-        requestAnimationFrame(tick);
-      });
-    },
-    { threshold: 0.6 }
-  );
-  $$('[data-count]').forEach((el) => countObs.observe(el));
 
   /* Typed roles */
   const typed = $('.typed');
@@ -330,10 +304,8 @@
     ['Contact', 'Section', go('#contact')],
     ['Toggle light / dark theme', 'Action', toggleTheme],
     ['Copy email address', 'Action', () => copy('cocozhao321@gmail.com', 'Email copied')],
-    ['Copy short bio', 'Action', () => copy($('#short-bio').textContent.trim(), 'Bio copied')],
     ['Send an email', 'Link', () => { location.href = 'mailto:cocozhao321@gmail.com'; }],
     ['Open LinkedIn', 'Link', open('https://www.linkedin.com/in/coco-zhao-8555b3126/')],
-    ['Open GitHub', 'Link', open('https://github.com/cocozhao321')],
     ['Open Google Scholar', 'Link', open('https://scholar.google.com/citations?user=1sRV25IAAAAJ&hl=en')],
   ].map(([label, kind, run]) => ({ label, kind, run }));
   let filtered = commands, sel = 0;

@@ -277,10 +277,6 @@ kbd {
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chips li { padding: .4rem .85rem; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); font-size: .9rem; transition: transform .2s, border-color .2s; }
 .chips li:hover { transform: translateY(-2px) rotate(-1deg); border-color: var(--accent); }
-.bio-box { margin-top: 2rem; padding: 1.25rem 1.4rem; border-radius: var(--radius); border: 1px dashed var(--border-strong); background: var(--surface); }
-.bio-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.bio-head .label { margin: 0; }
-.bio-box p:last-child { margin-top: .6rem; font-size: .92rem; color: var(--text-2); }
 .facts { display: grid; padding: .5rem 1.5rem; }
 .facts > div { display: grid; grid-template-columns: 110px 1fr; gap: 1rem; padding: .95rem 0; border-bottom: 1px solid var(--border); }
 .facts > div:last-child { border-bottom: 0; }
@@ -453,7 +449,7 @@ dialog[open] { animation: dlg .22s var(--ease); }
   .js .reveal { opacity: 1; transform: none; }
 }
 @media print {
-  .nav, .hero-canvas, .hero-glow, .scroll-hint, .filters, .pub-actions, .progress, .toast, .bio-head button { display: none !important; }
+  .nav, .hero-canvas, .hero-glow, .scroll-hint, .filters, .pub-actions, .progress, .toast { display: none !important; }
   .js .reveal { opacity: 1; transform: none; }
   .hero { min-height: auto; padding-top: 1rem; }
   .section { padding: 2rem 0; }
