@@ -16,7 +16,8 @@ An agent a business can rely on has to be evaluated before it ships, limited to 
 
 ## Highlights
 - Leads agent evaluation and the MCP platform for AI agents working on highly sensitive customer data
-- Designed a multi-agent system on Claude (Amazon Bedrock) with MCP and RAG/GraphRAG that cut incident analysis from 3 hours to 3 minutes; it won the People's Choice Award at an internal hackathon (2025) and she led 5 engineers to take it to production a quarter later
+- Designed a multi-agent system on Claude (Amazon Bedrock) with MCP and RAG/GraphRAG that cut incident analysis from 3 hours to 3 minutes
+- Led 5 engineers to turn a hackathon prototype, winner of the People's Choice Award at an internal hackathon (2025), into a production multi-agent reporting system
 - Architected an enterprise data platform processing 60M+ documents a day from 20+ sources at 99.99% uptime, serving 10k+ users at <1s p95 latency across 600k+ daily requests and 100+ downstream teams
 - Co-founded ForeverBrainTech and led its software development: 100k+ users across 5 provinces, team grown from 0 to 10+ engineers, acquired by HengNao Tech in 2022
 - Mentors 10+ engineers and sets technical direction through design docs and security reviews
