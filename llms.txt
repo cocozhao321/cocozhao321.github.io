@@ -1,25 +1,52 @@
 # Ke (Coco) Zhao
 
-> Software engineer at Amazon (Seattle, WA) specializing in trustworthy AI agents. Leads the agent evaluation workstream and the Model Context Protocol (MCP) platform that give a multi-agent customer-service platform governed access to highly sensitive customer data; builds production AI guardrails (prompt-injection defense, PII protection, hallucination monitoring). 6+ years shipping production software, including 4 at Amazon and 2 as co-founder of ForeverBrainTech (acquired 2022); 8 peer-reviewed papers, 249+ citations. BA Computer Science & Cognitive Science, University of Pennsylvania (Magna Cum Laude, 2022); MS Cybersecurity in progress at NYU Tandon (Cyber Fellow).
+> Software engineer at Amazon (Seattle, WA) who builds trustworthy agentic systems. Leads agent evaluation for a multi-agent customer-service platform and founded the Model Context Protocol (MCP) server that gives AI agents governed access to highly sensitive customer data; builds production AI guardrails (prompt-injection defense, PII protection, hallucination monitoring). 6+ years shipping production software, including 4 at Amazon and 2 as co-founder of ForeverBrainTech (acquired 2022); 8 peer-reviewed papers, 249+ citations, h-index 8. BA Computer Science & Cognitive Science, University of Pennsylvania (Magna Cum Laude, 2022); MS Cybersecurity in progress at NYU Tandon (Cyber Fellow).
 
 ## Profile
-- [Personal website](https://cocozhao321.github.io/): bio, experience, selected work, publications, contact
+- [Personal website](https://cocozhao321.github.io/): bio, experience, publications, contact
 - [LinkedIn](https://www.linkedin.com/in/coco-zhao-8555b3126/)
 - [Google Scholar](https://scholar.google.com/citations?user=1sRV25IAAAAJ)
 
-## Focus areas
-- Trustworthy AI agents: evaluation, governed data access, security
-- Agent evaluation: release gates, LLM-as-judge monitoring, and red-teaming for production agents
-- MCP servers, tools and agent skills that give AI agents governed access to data
-- Multi-agent systems on LLMs with RAG/GraphRAG
-- Large-scale data platforms and real-time pipelines on AWS
-- AI safety: prompt-injection defense, PII protection, hallucination monitoring
+## What she builds
+An agent a business can rely on has to be evaluated before it ships, limited to governed access to data, and guarded when something goes wrong. Her work covers all three.
 
-## Selected publications
+- Evaluate: leads agent evaluation and wrote its strategy and roadmap with a group of engineers and scientists; it is the shared standard for the organization's agent framework. A CI/CD release gate scores each agent against ground truth and blocks it below threshold. In production, a critic agent scores answers in real time and signal models score them offline every day, combined into one reliability score. Red-teaming finds failures before customers do.
+- Govern access: founded and launched the MCP server, from first commit to production, with tools and agent skills that give AI agents one secure, governed way to reach highly sensitive customer data. Authentication, fine-grained authorization, rate limiting and data-classification controls are built in. Its reusable framework cut other teams' build time for a new MCP server from two months to two weeks.
+- Guard: production guardrails for LLM features, including prompt-injection defense, PII detection and scrubbing at >99.9% accuracy, and hallucination monitoring. Has taken AI products through multiple security reviews.
+
+## Highlights
+- Leads agent evaluation and the MCP platform for AI agents working on highly sensitive customer data
+- Designed a multi-agent system on Claude (Amazon Bedrock) with MCP and RAG/GraphRAG that cut incident analysis from 3 hours to 3 minutes; it won the People's Choice Award at an internal hackathon (2025) and she led 5 engineers to take it to production a quarter later
+- Architected an enterprise data platform processing 60M+ documents a day from 20+ sources at 99.99% uptime, serving 10k+ users at <1s p95 latency across 600k+ daily requests and 100+ downstream teams
+- Co-founded ForeverBrainTech and led its software development: 100k+ users across 5 provinces, team grown from 0 to 10+ engineers, acquired by HengNao Tech in 2022
+- Mentors 10+ engineers and sets technical direction through design docs and security reviews
+- 8 peer-reviewed papers in cognitive neuroscience and NLP, 249+ citations, h-index 8
+
+## Experience
+- Software Engineer, Amazon, Seattle, WA (Jul 2022 to present): agent evaluation, MCP platform, AI guardrails, multi-agent systems, enterprise data platform
+- Co-founder & Software Development Lead, ForeverBrainTech (May 2020 to Jun 2022): behavioral-assessment SaaS platform and its ML data pipeline
+- Research Assistant, UPenn CNDS, Princeton Computational Memory Lab and Penn Medicine (Sep 2018 to May 2022): real-time fMRI software (RT-Cloud), a remote research platform that served 10k+ participants, computational modeling
+
+## Skills
+- Trustworthy AI: agent and LLM evaluation, LLM-as-judge, release gates, red-teaming, guardrails, prompt-injection defense, PII protection, data governance
+- AI systems: Model Context Protocol (MCP), multi-agent systems, Claude on Amazon Bedrock, RAG/GraphRAG, agent skills
+- Languages: Python, Java, TypeScript, JavaScript, SQL
+- Backend, cloud and data: AWS Lambda, EC2, API Gateway, OpenSearch, DynamoDB, SNS/SQS/Kinesis, real-time streaming, CI/CD
+- Security: authentication and authorization, fine-grained access control, rate limiting, threat modeling, security reviews
+
+## Education
+- MS Cybersecurity, NYU Tandon School of Engineering (Jan 2026 to present, Cyber Fellow scholarship)
+- BA Computer Science & Cognitive Science, University of Pennsylvania (2022, Magna Cum Laude)
+
+## Publications
 - Giorgi, S., Zhao, K., Feng, A. H., & Martin, L. J. (2023). Author as Character and Narrator: Deconstructing Personal Narratives from the r/AmITheAsshole Reddit Community. ICWSM 17. https://doi.org/10.1609/icwsm.v17i1.22141
 - Wallace, G., ..., Zhao, K., ... Norman, K. A. (2022). RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI. NeuroImage 257. https://doi.org/10.1016/j.neuroimage.2022.119295
 - Quan, P., ..., Zhao, K., ... Rao, H. (2022). Cerebellum anatomy predicts individual risk-taking behavior and risk tolerance. NeuroImage 254. https://doi.org/10.1016/j.neuroimage.2022.119148
 - Mao, T., ..., Zhao, K., ... Rao, H. (2021). Impaired vigilant attention partly accounts for inhibition control deficits after total sleep deprivation and partial sleep restriction. Nature and Science of Sleep 13. https://doi.org/10.2147/NSS.S314769
+- Arya, N., Vaish, A., Zhao, K., & Rao, H. (2021). Neural mechanisms underlying breast cancer related fatigue: A systematic review of neuroimaging studies. Frontiers in Neuroscience 15. https://doi.org/10.3389/fnins.2021.735945
+- Lei, H., ..., Zhao, K., ... Rao, H. (2020). Altered spontaneous brain activity in obsessive-compulsive personality disorder. Comprehensive Psychiatry 96. https://doi.org/10.1016/j.comppsych.2019.152144
+- Xu, S., ..., Zhao, K., ... Rao, H. (2019). High sensation seeking is associated with behavioral and neural insensitivity to increased negative outcomes during decision-making under uncertainty. Cognitive, Affective, & Behavioral Neuroscience 19(6). https://doi.org/10.3758/s13415-019-00751-x
+- Yang, F. N., ..., Zhao, K., ... Rao, H. (2019). Test-retest reliability of cerebral blood flow for assessing brain function at rest and during a vigilance task. NeuroImage 193. https://doi.org/10.1016/j.neuroimage.2019.03.016
 
 ## Contact
 - Email: cocozhao321@gmail.com

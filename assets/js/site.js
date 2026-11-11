@@ -90,22 +90,17 @@
     revealObs.observe(el);
   });
 
-  /* Typed roles */
+  /* Typed headline: types once, then holds */
   const typed = $('.typed');
   if (typed) {
-    const words = typed.dataset.words.split('|');
+    const text = typed.dataset.text;
     if (reduceMotion) {
-      typed.textContent = words[0];
+      typed.textContent = text;
     } else {
-      let w = 0, i = 0, deleting = false;
+      let i = 0;
       const step = () => {
-        const word = words[w];
-        i += deleting ? -1 : 1;
-        typed.textContent = word.slice(0, i);
-        let delay = deleting ? 35 : 70;
-        if (!deleting && i === word.length) { deleting = true; delay = 1800; }
-        else if (deleting && i === 0) { deleting = false; w = (w + 1) % words.length; delay = 300; }
-        setTimeout(step, delay);
+        typed.textContent = text.slice(0, ++i);
+        if (i < text.length) setTimeout(step, 55);
       };
       step();
     }
@@ -224,7 +219,6 @@
       })
     );
   };
-  setupFilter('.filter', '.project', 'filter', 'cat');
   setupFilter('.pfilter', '.pub', 'topic', 'topic');
 
   /* Citations */
@@ -296,7 +290,6 @@
   const commands = [
     ['Focus: trustworthy AI agents', 'Section', go('#focus')],
     ['Experience', 'Section', go('#experience')],
-    ['Selected work', 'Section', go('#work')],
     ['About', 'Section', go('#about')],
     ['Skills', 'Section', go('#skills')],
     ['Publications', 'Section', go('#publications')],

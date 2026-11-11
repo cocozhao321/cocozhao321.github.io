@@ -61,7 +61,7 @@
         "url": "https://cocozhao321.github.io/",
         "name": "Ke (Coco) Zhao — Building Trustworthy AI Agents",
         "isPartOf": { "@id": "https://cocozhao321.github.io/#website" },
-        "dateModified": "2026-10-30",
+        "dateModified": "2026-11-10",
         "mainEntity": { "@id": "https://cocozhao321.github.io/#person" }
       },
       {
@@ -75,19 +75,19 @@
         "image": "https://cocozhao321.github.io/images/coco-zhao.jpg",
         "email": "mailto:cocozhao321@gmail.com",
         "jobTitle": "Software Engineer",
-        "description": "Software engineer at Amazon who builds trustworthy AI agents: leads agent evaluation and the Model Context Protocol (MCP) platform that gives agents governed access to highly sensitive customer data. Startup co-founder and published neuroscience researcher.",
+        "description": "Software engineer at Amazon who builds trustworthy agentic systems. Leads agent evaluation (strategy and roadmap, CI/CD release gates, production reliability scoring, red-teaming) and founded the Model Context Protocol (MCP) server that gives AI agents governed access to highly sensitive customer data. 6+ years shipping production software. Startup co-founder (acquired 2022) and published neuroscience researcher with 8 peer-reviewed papers.",
         "worksFor": { "@type": "Organization", "name": "Amazon", "url": "https://www.amazon.com" },
         "homeLocation": { "@type": "Place", "name": "Seattle, WA" },
         "alumniOf": [
           { "@type": "CollegeOrUniversity", "name": "University of Pennsylvania", "url": "https://www.upenn.edu" },
           { "@type": "CollegeOrUniversity", "name": "NYU Tandon School of Engineering", "url": "https://engineering.nyu.edu" }
         ],
-        "award": ["NYU Cyber Fellow", "Magna Cum Laude, University of Pennsylvania"],
+        "award": ["NYU Cyber Fellow", "Magna Cum Laude, University of Pennsylvania", "People's Choice Award, internal hackathon (2025)"],
         "sameAs": [
           "https://www.linkedin.com/in/coco-zhao-8555b3126/",
           "https://scholar.google.com/citations?user=1sRV25IAAAAJ"
         ],
-        "knowsAbout": ["Trustworthy AI", "AI platforms", "Agent infrastructure", "AI agent evaluation", "LLM evaluation", "AI security", "AI governance", "Model Context Protocol (MCP)", "AI agents", "Multi-agent systems", "Large language models", "Retrieval-augmented generation", "AI safety", "Distributed systems", "Data engineering", "Full-stack development", "Cybersecurity", "Cognitive neuroscience", "fMRI"]
+        "knowsAbout": ["Trustworthy AI", "Agentic systems", "AI engineering", "AI platforms", "Agent infrastructure", "AI agent evaluation", "LLM evaluation", "LLM-as-judge", "Red-teaming", "AI guardrails", "AI security", "AI governance", "Model Context Protocol (MCP)", "AI agents", "Multi-agent systems", "Large language models", "Retrieval-augmented generation", "AI safety", "Distributed systems", "Data engineering", "Cybersecurity", "Cognitive neuroscience", "fMRI"]
       },
       { "@type": "ScholarlyArticle", "headline": "Author as Character and Narrator: Deconstructing Personal Narratives from the r/AmITheAsshole Reddit Community", "datePublished": "2023", "isPartOf": "Proceedings of the International AAAI Conference on Web and Social Media", "sameAs": "https://doi.org/10.1609/icwsm.v17i1.22141", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
       { "@type": "ScholarlyArticle", "headline": "RT-Cloud: A cloud-based software framework to simplify and standardize real-time fMRI", "datePublished": "2022", "isPartOf": "NeuroImage", "sameAs": "https://doi.org/10.1016/j.neuroimage.2022.119295", "author": [{ "@id": "https://cocozhao321.github.io/#person" }] },
@@ -115,7 +115,6 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#focus">Focus</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Research</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -148,14 +147,13 @@
       <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> AI agent platforms · Evaluation · MCP · AI security</p>
       <h1 id="hero-name">Ke (Coco) Zhao</h1>
       <p class="hero-role" aria-live="polite">
-        <span class="sr-only">I build AI agents people can trust: evaluated, governed and secure.</span>
-        <span aria-hidden="true"><span class="typed" data-words="I build AI agents you can trust.|I lead agent evaluation at Amazon.|I lead MCP for agents on sensitive data.|I turn research into production systems."></span><span class="caret"></span></span>
+        <span class="sr-only">I build trustworthy agentic systems: evaluated, governed and secure.</span>
+        <span aria-hidden="true"><span class="typed" data-text="I build trustworthy agentic systems."></span><span class="caret"></span></span>
       </p>
       <p class="hero-desc">
-        I'm a software engineer at <strong>Amazon</strong> who builds the platforms that make AI agents <strong>trustworthy</strong>:
-        rigorously evaluated, limited to governed data access, and secure enough for
-        <strong>highly sensitive customer data</strong>. I lead agent evaluation and
-        <strong>Model Context Protocol (MCP)</strong> data access for the multi-agent platform that helps customer service understand the voice of the customer. 6+ years shipping production software: 4 at Amazon, 2 as a startup co-founder.
+        I'm a software engineer at <strong>Amazon</strong>. I lead <strong>agent evaluation</strong> and
+        <strong>Model Context Protocol (MCP)</strong> data access for a multi-agent platform that works with
+        <strong>highly sensitive customer data</strong>: agents are evaluated before they ship, reach data only through governed access, and run behind guardrails. 6+ years shipping production software: 4 at Amazon, 2 as a startup co-founder.
       </p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="#focus">What I do <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -176,10 +174,10 @@
   </div>
   <div class="container">
     <dl class="stats">
-      <div class="stat"><dt>Years shipping software</dt><dd>6+</dd></div>
-      <div class="stat"><dt>Documents processed daily</dt><dd>60M+</dd></div>
-      <div class="stat"><dt>Platform uptime</dt><dd>99.99%</dd></div>
       <div class="stat"><dt>Faster incident triage (3h → 3min)</dt><dd>60×</dd></div>
+      <div class="stat"><dt>To launch a new MCP server, down from 2 months</dt><dd>2 weeks</dd></div>
+      <div class="stat"><dt>Documents a day at 99.99% uptime</dt><dd>60M+</dd></div>
+      <div class="stat"><dt>Users at the startup I co-founded</dt><dd>100k+</dd></div>
     </dl>
   </div>
   <a class="scroll-hint" href="#focus" aria-label="Scroll to content"><span></span></a>
@@ -190,7 +188,7 @@
   <div class="container">
     <header class="section-head reveal">
       <p class="kicker">01 — Focus</p>
-      <h2 id="focus-title">I build AI agents people can trust</h2>
+      <h2 id="focus-title">What it takes to trust an agent</h2>
       <p class="section-sub">A demo agent is easy. An agent a business can rely on needs evidence it works, a strict limit on what it can access, and guardrails for when things go wrong. That is the part I own.</p>
     </header>
     <ol class="trust">
@@ -198,14 +196,14 @@
         <span class="trust-step" aria-hidden="true">01</span>
         <div class="now-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
         <h3>Evaluate</h3>
-        <p>Evaluation is the center of a trustworthy agent ecosystem. <strong>I lead that workstream</strong> for our multi-agent platform: release gates, LLM-as-judge monitoring, and red-teaming, so we ship on evidence instead of demos.</p>
+        <p>Evaluation is the center of a trustworthy agent ecosystem, and <strong>I lead it</strong> for our multi-agent platform. A release gate in CI/CD scores every agent against ground truth before it ships. In production, a critic agent and daily signal models score live answers into one reliability score, and red-teaming finds failures before customers do.</p>
         <ul class="tags"><li>LLM-as-judge</li><li>Release gates</li><li>Red-teaming</li></ul>
       </li>
       <li class="card spot trust-card reveal">
         <span class="trust-step" aria-hidden="true">02</span>
         <div class="now-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></div>
         <h3>Govern access</h3>
-        <p><strong>I lead the MCP platform</strong> that gives agents one secure, auditable way to reach <strong>highly sensitive customer data</strong>, with authentication, fine-grained authorization and data-classification controls built in.</p>
+        <p><strong>I founded and launched the MCP server</strong> that gives agents one secure, auditable way to reach <strong>highly sensitive customer data</strong>, with authentication, fine-grained authorization and data-classification controls built in. Its reusable framework cut other teams' build time for a new MCP server from two months to two weeks.</p>
         <ul class="tags"><li>MCP</li><li>AuthN / AuthZ</li><li>Data classification</li></ul>
       </li>
       <li class="card spot trust-card reveal">
@@ -222,17 +220,15 @@
         <h3>Trustworthy AI agents and AI platforms, end to end</h3>
       </div>
       <ul class="fit-list">
-        <li><b>Leads</b> agent evaluation and the MCP platform</li>
+        <li><b>Leads</b> agent evaluation: strategy, roadmap and release gates</li>
+        <li><b>Founded</b> the MCP platform, from first commit to production</li>
         <li><b>Owns</b> systems end to end: 60M+ docs/day at 99.99% uptime</li>
         <li><b>Secures</b> AI on highly sensitive customer data</li>
-        <li><b>Grows</b> engineers: mentors 5+ and sets direction through design docs and security reviews</li>
+        <li><b>Cut</b> incident analysis from 3 hours to 3 minutes with a multi-agent system</li>
+        <li><b>Grows</b> engineers: mentors 10+ and sets direction through design docs and security reviews</li>
         <li><b>Co-founder</b> of a startup that grew from 0 to 100k+ users and was acquired</li>
         <li><b>Researcher:</b> 8 papers, 249+ citations</li>
       </ul>
-      <div class="fit-cta">
-        <a class="btn btn-primary" href="mailto:cocozhao321@gmail.com">Get in touch</a>
-        <a class="btn btn-ghost" href="https://www.linkedin.com/in/coco-zhao-8555b3126/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
     </div>
   </div>
 </section>
@@ -256,13 +252,13 @@
             <span class="badge badge-live">Current</span>
           </header>
           <ul class="bullets">
-            <li><strong>Lead the agent evaluation workstream</strong> for a multi-agent platform supporting customer service: release gates, LLM-as-judge monitoring, and red-teaming, so agents ship on evidence instead of demos.</li>
-            <li><strong>Lead the MCP platform</strong> that helps that multi-agent platform understand the voice of the customer: MCP servers, tools and agent skills that give AI agents across the organization one secure, governed way to reach <strong>highly sensitive customer data</strong>.</li>
-            <li>Architected a full-stack enterprise data platform (React, Lambda/EC2, OpenSearch) processing <strong>60M+ documents daily</strong> from 20+ sources at 99.99% uptime; serves 10k+ users with &lt;1s p95 latency across 600k+ daily requests.</li>
-            <li>Designed a <strong>multi-agent AI system</strong> on Claude (Bedrock) with MCP for agent coordination and RAG/GraphRAG for retrieval; its incident-analysis agent cut investigation time from <strong>3 hours to 3 minutes</strong>.</li>
+            <li><strong>Lead agent evaluation</strong> for a multi-agent platform supporting customer service: wrote the strategy and roadmap with a group of engineers and scientists, now the shared standard for the organization's agent framework.</li>
+            <li><strong>Founded the MCP platform</strong> and took it from first commit to production, hardening authorization for personal data and passing security review. AI agents across the organization now use it.</li>
+            <li>Architected an enterprise data platform (Lambda/EC2, OpenSearch, React) processing <strong>60M+ documents daily</strong> from 20+ sources at 99.99% uptime; serves 10k+ users with &lt;1s p95 latency across 600k+ daily requests.</li>
+            <li>Designed a <strong>multi-agent AI system</strong> on Claude (Bedrock) with MCP for agent coordination and RAG/GraphRAG for retrieval; its incident-analysis agent cut investigation time from <strong>3 hours to 3 minutes</strong>. It won the People's Choice Award at an internal hackathon in 2025, and I led 5 engineers to take it to production a quarter later.</li>
             <li>Built real-time ingestion (SNS/SQS/Kinesis) with &lt;5 min latency, and REST APIs with OAuth, rate limiting and access controls serving 100+ downstream teams.</li>
-            <li>Shipped AI safety guardrails: prompt-injection defense, PII detection and scrubbing (&gt;99.9% accuracy), hallucination monitoring; led products through multiple security reviews.</li>
-            <li>Set technical direction through design docs and security reviews; mentor to 5+ engineers; work across science, product and engineering.</li>
+            <li>Shipped the AI safety guardrails for LLM features and led products through multiple security reviews.</li>
+            <li>Set technical direction through design docs and security reviews; mentor to 10+ engineers; work across science, product and engineering.</li>
           </ul>
           <ul class="tags" aria-label="Technologies">
             <li>Agent evals</li><li>MCP</li><li>Claude / Bedrock</li><li>RAG / GraphRAG</li><li>Python</li><li>Java</li><li>TypeScript</li><li>React</li><li>Lambda</li><li>OpenSearch</li><li>DynamoDB</li><li>Kinesis</li>
@@ -297,7 +293,7 @@
             </div>
           </header>
           <ul class="bullets">
-            <li>Contributed to the open-source <strong>RT-Cloud</strong> framework: redesigned its cloud architecture for real-time fMRI neurofeedback and integrated OpenNeuro datasets (<em>NeuroImage</em>, 2022).</li>
+            <li>Contributed to the open-source <a href="https://github.com/brainiak/rt-cloud" target="_blank" rel="noopener"><strong>RT-Cloud</strong></a> framework: redesigned its cloud architecture for real-time fMRI neurofeedback, and built a toolkit that converts OpenNeuro datasets to BIDS-Incremental so they can stream into real-time pipelines (<em>NeuroImage</em>, 2022).</li>
             <li>Built a full-stack remote research platform (React, Node.js, MongoDB) that served <strong>10k+ participants</strong> during COVID-19, keeping multi-site studies running while labs were closed.</li>
             <li>Built computational models with PyTorch and PsyNeuLink; co-authored <strong>8 peer-reviewed papers</strong>.</li>
           </ul>
@@ -308,86 +304,11 @@
   </div>
 </section>
 
-<!-- WORK -->
-<section id="work" class="section alt" aria-labelledby="work-title">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="kicker">03 — Selected work</p>
-      <h2 id="work-title">Things I've built</h2>
-    </header>
-    <div class="filters reveal" role="group" aria-label="Filter projects">
-      <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All</button>
-      <button type="button" class="filter" data-filter="trust" aria-pressed="false">Trustworthy AI</button>
-      <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI &amp; agents</button>
-      <button type="button" class="filter" data-filter="platform" aria-pressed="false">Platforms</button>
-      <button type="button" class="filter" data-filter="research" aria-pressed="false">Research</button>
-      <button type="button" class="filter" data-filter="startup" aria-pressed="false">Startup</button>
-    </div>
-    <div class="projects">
-      <article class="card spot project featured" data-cat="ai platform trust">
-        <div class="project-top"><span class="project-kind">Amazon · Current</span><span class="badge badge-live">Leading</span></div>
-        <h3>MCP data-access platform for AI agents</h3>
-        <p>A Model Context Protocol layer that gives any AI agent one secure, governed interface to highly sensitive customer data. It powers a multi-agent platform that helps customer service understand the voice of the customer, with tools for exploring and summarizing customer insights and agent skills that chain those tools into full deep dives. Authentication, authorization and data-classification controls are built in.</p>
-        <ul class="tags"><li>MCP</li><li>Agent skills</li><li>LLMs</li><li>Security</li></ul>
-      </article>
-      <article class="card spot project" data-cat="ai trust">
-        <div class="project-top"><span class="project-kind">Amazon · Current</span><span class="badge badge-live">Leading</span></div>
-        <h3>Agent evaluation</h3>
-        <p>Evaluation is the center of a trustworthy agent ecosystem, so I treat it as core infrastructure for our multi-agent customer-service platform: release gates before launch, LLM-as-judge monitoring in production, and red-teaming to find failures before customers do.</p>
-        <ul class="tags"><li>LLM-as-judge</li><li>Release gates</li><li>Red-teaming</li></ul>
-      </article>
-      <article class="card spot project" data-cat="ai trust">
-        <div class="project-top"><span class="project-kind">Amazon</span></div>
-        <h3>AI safety guardrails</h3>
-        <p>Production guardrails for LLM features: prompt-injection defense, PII scrubbing at &gt;99.9% accuracy, hallucination monitoring and automated security controls.</p>
-        <ul class="tags"><li>Python</li><li>LLMs</li><li>Security</li></ul>
-      </article>
-      <article class="card spot project" data-cat="ai">
-        <div class="project-top"><span class="project-kind">Amazon</span></div>
-        <h3>Multi-agent incident analysis</h3>
-        <p>Specialist agents on Claude (Bedrock), coordinated over MCP, with RAG/GraphRAG retrieval. Incident triage went from 3 hours to 3 minutes.</p>
-        <ul class="tags"><li>Claude / Bedrock</li><li>MCP</li><li>GraphRAG</li></ul>
-      </article>
-      <article class="card spot project" data-cat="platform">
-        <div class="project-top"><span class="project-kind">Amazon</span></div>
-        <h3>Enterprise data platform</h3>
-        <p>React + Lambda/EC2 + OpenSearch, fed by 20+ sources. Handles 60M+ documents a day at 99.99% uptime with &lt;1s p95 latency for 10k+ users.</p>
-        <ul class="tags"><li>React</li><li>AWS</li><li>OpenSearch</li><li>Kinesis</li></ul>
-      </article>
-      <article class="card spot project" data-cat="startup platform">
-        <div class="project-top"><span class="project-kind">ForeverBrainTech · Acquired</span></div>
-        <h3>Behavioral-assessment SaaS</h3>
-        <p>Co-founded and architected the product: 100k+ users across 5 provinces, an end-to-end ML reporting pipeline, and a team grown from 0 to 10+ engineers.</p>
-        <ul class="tags"><li>React</li><li>Node.js</li><li>PostgreSQL</li><li>ML</li></ul>
-      </article>
-      <article class="card spot project" data-cat="research platform">
-        <div class="project-top"><span class="project-kind">UPenn</span></div>
-        <h3>CogBrain remote research platform</h3>
-        <p>A web platform that served 10k+ research participants during COVID-19, with multi-site studies and real-time data aggregation.</p>
-        <ul class="tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
-      </article>
-      <article class="card spot project" data-cat="research">
-        <div class="project-top"><span class="project-kind">Princeton · Open source</span></div>
-        <h3>RT-Cloud: real-time fMRI</h3>
-        <p>Cloud architecture for BrainIAK's real-time fMRI neurofeedback framework, published in <em>NeuroImage</em> (2022).</p>
-        <ul class="tags"><li>Python</li><li>Cloud</li><li>fMRI</li></ul>
-        <a class="link" href="https://github.com/brainiak/rt-cloud" target="_blank" rel="noopener">View project <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
-      </article>
-      <article class="card spot project" data-cat="research">
-        <div class="project-top"><span class="project-kind">Open source</span></div>
-        <h3>OpenNeuro → BIDS-I toolkit</h3>
-        <p>Downloads OpenNeuro datasets and converts them to BIDS-Incremental so they can be streamed into real-time fMRI pipelines.</p>
-        <ul class="tags"><li>Python</li><li>BIDS</li><li>Neuroimaging</li></ul>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- ABOUT -->
 <section id="about" class="section alt" aria-labelledby="about-title">
   <div class="container">
     <header class="section-head reveal">
-      <p class="kicker">04 — About</p>
+      <p class="kicker">03 — About</p>
       <h2 id="about-title">From neuroscience labs to production AI agents</h2>
     </header>
     <div class="about-grid">
@@ -395,6 +316,7 @@
         <p>Hi, I'm Coco. I grew up in Wenzhou, China, moved to Philadelphia at 16, and graduated <strong>Magna Cum Laude</strong> from the <strong>University of Pennsylvania</strong> with a double major in Computer Science and Cognitive Science.</p>
         <p>At <strong>Amazon</strong> I work on the parts of AI agents that decide whether people can trust them: how agents are evaluated, what data they can reach, and what stops them when something goes wrong. The data involved is highly sensitive customer data, so security and governance are part of every design.</p>
         <p>Before Amazon I co-founded <strong>ForeverBrainTech</strong>, a behavioral-assessment startup that grew to 100k+ users and was acquired in 2022, and spent four years doing neuroimaging research at UPenn, Princeton and Penn Medicine, which led to 8 peer-reviewed papers.</p>
+        <p>The thread through all of it is measurement. My research asked whether a reading of the brain could be trusted, and my startup built behavioral assessments people could rely on. <strong>Evaluating an AI agent is the same problem with a different subject.</strong></p>
         <p class="label">Outside of work</p>
         <ul class="chips" aria-label="Hobbies">
           <li>🎹 Piano</li><li>🧩 Rubik's Cube</li><li>✈️ Travel</li><li>🔢 Sudoku</li>
@@ -416,7 +338,7 @@
 <section id="skills" class="section" aria-labelledby="skills-title">
   <div class="container">
     <header class="section-head reveal">
-      <p class="kicker">05 — Toolkit</p>
+      <p class="kicker">04 — Toolkit</p>
       <h2 id="skills-title">What I work with</h2>
     </header>
     <div class="skills reveal">
@@ -425,7 +347,7 @@
       <div class="skill-group"><h3>Languages</h3><ul class="tags"><li>Python</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li></ul></div>
       <div class="skill-group"><h3>Backend &amp; cloud</h3><ul class="tags"><li>AWS Lambda</li><li>EC2</li><li>API Gateway</li><li>S3</li><li>SageMaker</li><li>Spring Boot</li><li>Kubernetes</li><li>CI/CD</li></ul></div>
       <div class="skill-group"><h3>Data</h3><ul class="tags"><li>OpenSearch</li><li>DynamoDB</li><li>SNS / SQS / Kinesis</li><li>Real-time streaming</li><li>ETL</li></ul></div>
-      <div class="skill-group"><h3>Frontend</h3><ul class="tags"><li>React</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li></ul></div>
+      <div class="skill-group"><h3>Web</h3><ul class="tags"><li>React</li><li>Node.js</li><li>REST APIs</li><li>WebSockets</li></ul></div>
       <div class="skill-group"><h3>Security</h3><ul class="tags"><li>AuthN / AuthZ</li><li>Fine-grained access control</li><li>Threat modeling</li><li>Security reviews</li></ul></div>
     </div>
   </div>
@@ -435,7 +357,7 @@
 <section id="publications" class="section alt" aria-labelledby="pubs-title">
   <div class="container">
     <header class="section-head reveal">
-      <p class="kicker">06 — Research</p>
+      <p class="kicker">05 — Research</p>
       <h2 id="pubs-title">Publications</h2>
       <p class="section-sub">Cognitive neuroscience research on decision-making, sleep and brain imaging, plus one NLP paper. 8 peer-reviewed papers, 249+ citations, h-index 8 (<a href="https://scholar.google.com/citations?user=1sRV25IAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>). Click <em>Cite</em> to copy APA or BibTeX.</p>
     </header>
@@ -528,7 +450,7 @@
 <section id="education" class="section" aria-labelledby="edu-title">
   <div class="container">
     <header class="section-head reveal">
-      <p class="kicker">07 — Education</p>
+      <p class="kicker">06 — Education</p>
       <h2 id="edu-title">Education</h2>
     </header>
     <div class="edu-grid">
@@ -555,7 +477,7 @@
 <!-- CONTACT -->
 <section id="contact" class="section contact" aria-labelledby="contact-title">
   <div class="container reveal">
-    <p class="kicker">08 — Contact</p>
+    <p class="kicker">07 — Contact</p>
     <h2 id="contact-title">Let's talk</h2>
     <p class="section-sub">I'm always happy to talk with fellow builders about trustworthy AI agents, agent evaluation, MCP and AI security.</p>
     <div class="contact-cta">
